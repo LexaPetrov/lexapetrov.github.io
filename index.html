@@ -3,26 +3,89 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript" src="dist/js/instafeed.min.js"></script>
-	<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'ab6942750c794038814f0241150c9001'
-    });
-    feed.run();
-	</script>
+ 	<link rel="stylesheet" href="dist/css/style.css">
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<title>Алексей Петров</title>
 </head>
 <body>
-	<main>
-		<div class="content">
-			
+	<header>
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<div class="info">
+					<p>
+							<h6>Пишите <a href="t.me/killing4fun">в Telegram</a> или<a href="mailto:al1111997@yandex.ru"> на почту</a></h6>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main id="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<div class="content">
+					<div class="about">
+						<h3>Алексей Петров</h3>
+						<p>Являюсь студентом Оренбургского Государственного Университета специальности Компьютерная Безопасность. Верстаю сайты по макету/с нуля любой сложности. Имею навыки в области работы с:
+						</p>
+						<ul>
+							<li>bootstrap</li>
+							<li>modx evolution</li>
+							<li>photoshop</li>
+							<li>final cut / imovie </li>
+							<li>webpack / git</li>
+						</ul>
+					</div>
+					 
+				</div>
+				
+				<div class="works">
+					<!-- <h4>Мои работы</h4> -->
+						<div class="spoiler">    
+							<label class="btn" for="spoiler">
+								Мои работы:
+							</label>
+							<input type="checkbox" id="spoiler"/>
+							<div class="works-items">
+								<ul>
+									<li>
+										<p>Макет из Интернета "My Company"</p>
+									</li>
+									<li>
+										<p>Выпускной макет курсов веб-разработки "КонтрКасса"</p>
+									</li>
+								</ul>
+				    			<label class="btn2" for="spoiler"><a>свернуть</a></label>					
+				    		</div>
+						</div>			
+				</div>
+
+				<div class="subscribe">
+					<h4>Подписывайтесь на мой Инстаграм</h4>
+				</div>			
+
+				<div class="rocket">
+					<h4>Отправить деньги</h4>
+					<p>Являюсь клиентом Рокетбанка, по моим ссылкам вы можете <a href="https://rocketbank.ru/aleksey-petrov-sparkling-hill">отправить мне деньги</a> или <a href="https://rocketbank.ru/loves/aleksey-petrov-sparkling-hill">заказать бесплатную карту с кешбеком</a>.</p>
+				</div>
+			</div>
 		</div>
 	</main>
-	<footer>
-		<div>
-			<div id="instafeed"></div>
+	<footer id="footer">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<hr>
+				<div class="footer-links">
+				<p>&copy; Алексей Петров, 2019</p>
+					<ul class="botnav">
+						<li><a href="https://vk.com/killing4fun"><img src="dist/img/vk.png" alt=""></a></li>
+						<li><a href="https://instagram.com/killing4fun"><img src="dist/img/instagram.png" alt=""></a></li>
+						<li><a href="https://twitter.com/petrovlexax"><img src="dist/img/twitter.png" alt=""></a></li>
+						<li><a href="https://t.me/killing4fun"><img src="dist/img/telegram.png" alt=""></a></li>
+						<li><a href="https://facebook.com/killing4fun"><img src="dist/img/facebook.png" alt=""></a></li>
+						<li><a href="https://github.com/lexapetrov"><img src="dist/img/github.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</footer>
 
