@@ -23,11 +23,44 @@ header {
 }
 
 .about {
-	width: 40%;
+	width: 100%;
 }
 
 .about ul {
 	padding-left: 30px;
+}
+
+.contactme {
+	width: 100%;
+}
+
+.contactme h3 {
+	float: left;
+}
+
+.contactme-items {
+	padding-left: 5%;
+}
+
+.avatar {
+	height: 20%;
+	width: 20%;
+	border-radius: 50%;
+	float: right;
+}
+
+.works-items img {
+	border-radius: 50%;
+	height: 40%; width: 40%;
+}
+
+.works-items-list ul{
+	display: block;
+	text-align: center;
+	list-style-type: circle;
+}
+.works-items-list li{
+	display: inline-block;
 }
 
 .rocket {
