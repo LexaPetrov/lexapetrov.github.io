@@ -57,9 +57,9 @@ header {
 }
 
 .works-items img {
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- -webkit-transition: all 1s ease-out;
+ -moz-transition: all 0.5s ease-out;
+ -o-transition: all 0.5s ease-out;
+ -webkit-transition: all 0.5s ease-out;
  }
 
 .works-items img:hover{
