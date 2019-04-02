@@ -43,16 +43,30 @@ header {
 }
 
 .avatar {
-	height: 20%;
-	width: 20%;
+	margin-top: -3%;
+	height: 30%;
+	width: 30%;
 	border-radius: 50%;
 	float: right;
 }
 
 .works-items img {
 	border-radius: 50%;
-	height: 40%; width: 40%;
+	height: 100%; width: 60%;
+	box-shadow: 0px 0px 10px 5px gray;
 }
+
+.works-items img {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+
+.works-items img:hover{
+ -webkit-transform: scale(1.7);
+ -moz-transform: scale(1.7);
+ -o-transform: scale(1.7);
+ }
 
 .works-items-list ul{
 	display: block;
@@ -60,7 +74,13 @@ header {
 	list-style-type: circle;
 }
 .works-items-list li{
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
 	display: inline-block;
+	padding-bottom: 5%;
+	padding: 4%;
+	margin-left: 1%;
 }
 
 .rocket {
