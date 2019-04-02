@@ -3,7 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<script type="text/javascript" src="dist/js/instafeed.min.js"></script>
+	<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'ab6942750c794038814f0241150c9001'
+    });
+    feed.run();
+	</script>
+	<title>Алексей Петров</title>
 </head>
 <body>
 	<main>
@@ -16,5 +25,8 @@
 			<div id="instafeed"></div>
 		</div>
 	</footer>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
