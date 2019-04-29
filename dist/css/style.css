@@ -98,8 +98,8 @@ header {
 .btn2 a {display: block; cursor: pointer; color: silver; padding-top: 1em; text-align: right;}
 .works-items {display: block; padding: 16px; margin: 16px; border: 1px dashed silver; height: auto;}
 .spoiler input[type=checkbox] {display: none;}
-.spoiler input[type=checkbox] + .works-items {display: block;}
-.spoiler input[type=checkbox]:checked + .works-items {display: none;}
+.spoiler input[type=checkbox] + .works-items {display: none;}
+.spoiler input[type=checkbox]:checked + .works-items {display: block;}
 
 #footer {
 	display: block;
