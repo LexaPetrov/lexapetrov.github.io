@@ -6,13 +6,35 @@
 	<link rel="icon" href="dist/img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="dist/img/favicon.ico" type="image/x-icon">
  	<link rel="stylesheet" href="dist/css/style.css">
+ 	<script src="./dist/jq/jquery.js"></script>
+ 	<script src="./dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<script src="./dist/js/script.js"></script>
 	<title>Алексей Петров</title>
 </head>
 <body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+				    <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		    	</button>
+				<a class="navbar-brand" href="" >👋👨🏻‍💻</a>
+		    </div>
+			   <div class="collapse navbar-collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+				       <li class="active"><a href="#">Главная</a></li>
+				       <li><a href="#about">Обо мне</a></li>
+				       <li><a href="#myworks">Мои работы</a></li>
+				       <li><a href="#donate">Задонатить</a></li>
+      				</ul>
+			   </div>
+		</div>
+	</nav>
 	<header>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-sm-12 col-xs-12">
 				<div class="info">
 					<p>
@@ -20,13 +42,13 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</header>
 	<main id="container">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12">
 				<div class="content">
-					<div class="about">
+					<div class="about" id="about">
 						<h3>Алексей Петров 👋</h3>
 						<p>Я студент Оренбургского Государственного Университета специальности Компьютерная Безопасность. Верстаю сайты по макету/с нуля любой сложности. Адаптирую под мобильные устройства. Имею навыки в области работы с:
 						</p>
@@ -62,7 +84,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 col-xs-12">
-				<div class="works">
+				<div class="works" id="myworks">
 					<h3>Мои работы 👀</h3>
 						<div class="spoiler">    
 							<label class="btn" for="spoiler" style="font-size: 14px; padding: 0px;">
@@ -102,7 +124,7 @@
 					<h4>Подписывайтесь на мой Инстаграм</h4>
 				</div>		 -->	
 
-				<div class="rocket">
+				<div class="rocket" id="donate">
 					<h4>Отправить деньги 🚀</h4>
 					<p>Являюсь клиентом Рокетбанка, по моим ссылкам вы можете <a href="https://rocketbank.ru/aleksey-petrov-sparkling-hill">отправить мне деньги</a> или <a href="https://rocketbank.ru/loves/aleksey-petrov-sparkling-hill">заказать бесплатную карту с кешбеком</a>. 💵</p>
 				</div>
