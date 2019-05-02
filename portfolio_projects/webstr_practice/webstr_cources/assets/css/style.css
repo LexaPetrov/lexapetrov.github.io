@@ -95,7 +95,7 @@ header .callback {
 }
 
 header .callback a {
-	font-size: 10px;
+	display: none;
 }
 
 
