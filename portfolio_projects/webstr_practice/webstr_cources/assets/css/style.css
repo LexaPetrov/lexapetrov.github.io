@@ -24,6 +24,21 @@
 	padding: 0;
 }
 
+
+
+/*.navbar.navbar-default {
+	background: #04569f;
+	border-radius: 0px;
+	width: 100%;
+}
+
+.nav.navbar-nav li a {
+	background: #04569f;
+	color: red;
+
+}*/
+
+
 .topnav .icon{
 	display: none;
 }
@@ -459,6 +474,8 @@ footer .botnav a:hover {
 		margin: 0;
 		padding: 0;
 	}
+	
+	
 
 	.container {
 		max-width: 100%;
@@ -469,6 +486,7 @@ footer .botnav a:hover {
 	font-size:22px;
 	color: #04569f;
 	margin-bottom: 15px;
+	display: none;
 	}
 
 	header .topnav.responsive {
@@ -499,12 +517,10 @@ footer .botnav a:hover {
 
 	header .topnav {
 	display: block;
-	position: relative;
-	top: 0;
 	justify-content: space-between;
 	background: #04569f;
 	line-height: 50px;
-	margin-top: -310px;
+	margin-top: 0px;
 	height: 40px;
 	}
 
@@ -520,7 +536,7 @@ footer .botnav a:hover {
 		float: right;
 		display: block;
 		color: #fff;
-		font-size: 25px;
+		font-size: 20px;
 		position: absolute;
 		top: 0;
 	}
@@ -532,24 +548,30 @@ footer .botnav a:hover {
 
 	header .header-logo {
 		margin-left: 35%;
-		margin-top: 5px;
+		display: none;
 	}
 
 	header .contacts {
 		margin-left: 35%;
 		font-size: 12px;
 		margin-top: 3px;
+		display: none;
 	}
 
 	header .callback {
 		display: block;
 		margin-left: 35%;
 		font-size: 12px;
+		display: none;
 	}
 
-	header .callback p, button{
+	header .callback p{
 		font-size: 12px;
 		margin-top: 3px;
+	}
+
+	header .callback a {
+		font-size: 10px;
 	}
 	
 	.photoblock  {
@@ -778,6 +800,8 @@ footer .botnav a:hover {
 			line-height: 0;
 		
 	}
+
+	
 }
 
 
