@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('./fonts/raleway/Raleway-Regular.ttf');
+}
+
+#counts {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.business {display: flex; background: #80d8ff;  width: 25%; padding: 1% 5%;}
+.downloads {display: flex; background: #82b1ff; width: 25%; padding: 1% 5%; }
+.installs {display: flex; background: #b388ff; width: 25%; padding: 1% 5%; }
+.users {display: flex; background: #ea80fc; width: 25%; padding: 1% 5%;}
+
+#counts p {
+	font-family: "Raleway", sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	color: #fff;
+}
+
+#counts p.text{
+	padding-left: 25px;
+	margin-top: 25px; 
+}
+
+#counts img {
+	height: 60px;
+}
