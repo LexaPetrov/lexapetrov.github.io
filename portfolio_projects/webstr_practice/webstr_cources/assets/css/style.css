@@ -94,6 +94,11 @@ header .callback {
 	margin-left: 106px;
 }
 
+header .callback a {
+	font-size: 10px;
+}
+
+
 header .callback  p{
 	font-family: 'Geometria-ExtraBold', sans-serif;
 	font-size: 20px;
