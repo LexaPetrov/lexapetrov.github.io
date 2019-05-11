@@ -71,7 +71,7 @@ function next() {
 		document.getElementById("number").innerHTML = "<br>" + "Вопрос "+ counter +" из 30";
 		document.getElementById("question").innerHTML = tasks[int].question;
 		for (i = 0; i < tasks[int].answers.length; i++) {
-			document.getElementById("answers").innerHTML += ` <input type="radio" id="answer-${counter}-${i+1}" value="${i+1}"></input>${tasks[int].answers[i]}<br> `;
+			document.getElementById("answers").innerHTML += ` <input type="radio" name="group" id="answer-${counter}-${i+1}" value="${i+1}"></input>${tasks[int].answers[i]}<br> `;
 		}
 		correctanswer = tasks[int].index;
 	}
@@ -121,8 +121,35 @@ function complete() {
 		tr.appendChild(td);
 	}
 
-	document.getElementById("result-brief").appendChild(document.createTextNode(`Ваш результат: ${Math.round(res/30*100)}%`));
-	//сделать выгрузку в файл
+	document.getElementById("result-brief").appendChild(document.createTextNode(`Результат теста для ${document.getElementById("name").value} : ${Math.round(res/30*100)}%`));
+
+	let answers = result.map(function (item) {
+		return `
+		номер вопроса: ${item.number}, вопрос: ${tasks[item.number].question},
+		выбранный ответ: ${tasks[item.number].answers[item.userAnswer - 1]},
+		правильный ответ: ${tasks[item.number].answers[item.rightAnswer - 1]}`;
+	});
+
+	let brief = `
+		Имя: ${document.getElementById("name").value}.
+		Процент решения: ${Math.round(res/30*100)}.
+	`;
+
+	let report = `
+		Имя: ${document.getElementById("name").value}.
+		Процент решения: ${Math.round(res/30*100)}.
+		Детали:
+		${answers}
+	`;
+
+	
+	//var share = `Я решил тест по информационной безопасности на ${Math.round(res/30*100)}%! Сможешь меня обойти? ` ;
+	//document.getElementById('share').setAttribute("data-title", share);
+	//$('#share').attr('data-description', 'wadsfd');
+	
+	setTimeout(download, 10, report, 'myfile.txt', 'text/plain');
+
+	//setTimeout(download, 10, brief, 'extrafile.txt', 'text/plain');
 }
 
 var sec=00;
@@ -147,8 +174,48 @@ function refresh()
 	if(min=='00' && sec=='00'){
 		sec="00";
 		clearInterval(inter);
-		/* выводим сообщение в элемент с id="sample", например <div id="sample"></div> */
-                //sample.innerHTML="Время вышло, тест окончен.";
 		complete();
 	}
 }
+
+function download(text, name, type) {
+	console.log("function called!");
+ 	var a = document.getElementById("a");
+ 	var file = new Blob([text], {type: type});
+ 	a.href = URL.createObjectURL(file);
+ 	a.download = name;
+}
+
+ // function PrintElem(elem)
+ //    {
+ //        Popup($(elem).html());
+ //    }
+
+  
+ //    function Popup(data)
+ //    {
+ //        var mywindow = window.open('', 'result', 'height=400,width=600');
+ //        mywindow.document.write('<html><head><title>РЕЗУЛЬТАТЫ ВЫПОЛНЕНИЯ ТЕСТА</title>');
+ //        var now = new Date();
+ //        mywindow.document.write('_______________________________________________________________________ <br><br>');
+ //        mywindow.document.write(now);
+ //        //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
+ //        mywindow.document.write('</head><body >');
+ //        mywindow.document.write('<style> body { font-size:20px; } </style>');
+ //        mywindow.document.write(data);
+ //        var name = document.getElementById("name").value
+ //        var res = document.getElementById("result-table");
+ //        mywindow.document.write(res);   
+ //        mywindow.document.write('</body></html>');
+ // 		mywindow.document.write('<br> _______________________________________________________________________ <br> ');
+ //        mywindow.document.close(); // necessary for IE >= 10
+ //        mywindow.focus(); // necessary for IE >= 10
+ //        mywindow.print();
+ //        mywindow.close();
+ //        return true;
+ //    }
+
+
+ //    function printdata() {
+ //    	PrintElem('#result');
+ //    }
