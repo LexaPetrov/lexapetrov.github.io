@@ -1,3 +1,4 @@
+
 var tasks = JSON.parse(JSON.stringify(test));
 var counter = 0;
 var result = [];
@@ -143,21 +144,20 @@ function complete() {
 		Детали:
 		${answers}
 	`;
+	var now = new Date();
+	log += 'Дата: ' + now + brief;
 
-	log += brief;
-	console.log(brief);
+	hashCode = function(s){
+  	return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+	}
 
-
+	console.log((log));
+	console.log(hashCode(log));
 
 	sendMail = function()
 	{
-	    window.location.href = "mailto:chumakoff.r.v@gmail.com?subject=Mail request&body="+report;
+	    window.location.href = "mailto:?subject=Результат тестирования&body="+brief;
 	}
-	//var share = `Я решил тест по информационной безопасности на ${Math.round(res/30*100)}%! Сможешь меня обойти? ` ;
-	//document.getElementById('share').setAttribute("data-title", share);
-	//$('#share').attr('data-description', 'wadsfd');
-	
-	//setTimeout(download, 10, report, 'myfile.txt', 'text/plain');
 
 	setTimeout(download, 10, brief, 'extrafile.txt', 'text/plain');
 }
@@ -231,4 +231,9 @@ function download(text, name, type) {
  //    function printdata() {
  //    	PrintElem('#result');
  //    }
-
+function check(){
+	document.getElementById("check-results").style.display = "block";
+}
+function checkres() {
+	// body...
+}
