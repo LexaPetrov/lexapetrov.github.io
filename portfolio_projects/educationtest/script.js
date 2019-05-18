@@ -134,8 +134,8 @@ function complete() {
 	});
 
 	let brief = `
-		Имя: ${document.getElementById("name").value}.
-		Процент решения: ${Math.round(res/30*100)}.
+		Name: ${document.getElementById("name").value}.
+		Percent: ${Math.round(res/30*100)}.
 	`;
 
 	let report = `
@@ -145,14 +145,33 @@ function complete() {
 		${answers}
 	`;
 	var now = new Date();
-	log += 'Дата: ' + now + brief;
+	log += 'Date: ' + now + brief;
 
-	hashCode = function(s){
-  	return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+	console.log((log)); //гезашифрованная строка
+
+	let cipher = salt => {
+    let textToChars = text => text.split('').map(c => c.charCodeAt(0))
+    let byteHex = n => ("0" + Number(n).toString(16)).substr(-2)
+    let applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code)    
+
+    return text => text.split('')
+        .map(textToChars)
+        .map(applySaltToChar)
+        .map(byteHex)
+        .join('')
 	}
 
-	console.log((log));
-	console.log(hashCode(log));
+	
+
+let myCipher = cipher('tests');
+//console.log(myCipher(log)); //зашифрованная строка
+document.getElementById("uniquecode").innerHTML += myCipher(log);
+// let myDecipher = decipher('tests');
+// //console.log(myDecipher(myCipher(log)));    //расшифровка
+// var test = (myDecipher(myCipher(log)));  
+// console.log(test);
+
+
 
 	sendMail = function()
 	{
@@ -235,5 +254,18 @@ function check(){
 	document.getElementById("check-results").style.display = "block";
 }
 function checkres() {
-	// body...
+	let decipher = salt => {
+	    let textToChars = text => text.split('').map(c => c.charCodeAt(0))
+	    let saltChars = textToChars(salt)
+	    let applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code)
+	    return encoded => encoded.match(/.{1,2}/g)
+	        .map(hex => parseInt(hex, 16))
+	        .map(applySaltToChar)
+	        .map(charCode => String.fromCharCode(charCode))
+	        .join('')
+	}
+	//console.log(log);
+	let myDecipher = decipher('tests');
+	var code = document.getElementById("checkinput").value;
+	document.getElementById("checked-results").innerHTML += myDecipher(code);
 }
