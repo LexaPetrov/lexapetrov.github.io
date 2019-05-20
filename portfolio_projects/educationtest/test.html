@@ -48,8 +48,18 @@
 							<a href="#" id="begin" class="btn btn-info begintest" onclick="showQuestions();">Начать тест!</a>
 						</div>
 						<div id="test" class="hidden">
-							<div class="time" data-step="1" data-intro='Время прохождения тестирования ограничено'>
-								<p><span id="timer"></span></p>
+							<div class = "test-header-container">
+								<div class="progress-bar-container">
+									<span id="progress"></span>
+									<div id="progress-bar-wrapper">
+										<div id="progress-bar">
+
+										</div>
+									</div>
+								</div>
+								<div class="time" data-step="1" data-intro='Время прохождения тестирования ограничено'>
+									<p><span id="timer"></span></p>
+								</div>
 							</div>
 							<div id="question">
 
@@ -67,7 +77,7 @@
 						<div>
 							<div><p>Понравилось? Поделитесь в социальных сетях.	<span style="float:right;"> Возникли трудности с взаимодействием? <a href="javascript:void(0);" onclick="javascript:introJs().start();">показать обучение</a></span></div>
 								<div  id="share" class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,telegram" data-counter="ig">
-									
+
 								</div>
 						</div>
 					</div>
@@ -75,16 +85,16 @@
 				<div class="hidden" id="result">
 					<h4 id="result-brief" data-step="5" data-intro='Ваш результат'></h4>
 					<table id="result-table"/>
-					
+
 					<div class="uniquecode" id="" data-step="6" data-intro='Результат сохранён здесь. Сохраните этот код, чтобы в будущем посмотреть результаты пройденных тестов.'>
 						<p>Ваш уникальный код результата тестирования:</p>
-						<textarea id="uniquecode" readonly rows="5" cols="40"></textarea> 
+						<textarea id="uniquecode" readonly rows="5" cols="40"></textarea>
 						<a href="#" id="copyto" class="btn btn-info" onclick="copyto();">Скопировать код в буфер</a>
 						<a href="#" onclick="sendMail();" class="btn btn-info">Отправить на почту</a>
 						<a href="" id="a" class="btn btn-success">Скачать отчёт</a>
 						<p>Вы сможете ввести код на <a href="index.html" class="underlink">этой странице</a></p>
 					</div>
-				</div>		
+				</div>
 			</main>
 		</div>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
