@@ -211,7 +211,7 @@ function complete() {
 
 	sendMail = function()
 	{
-	    window.location.href = "mailto:?subject=Результат тестирования&body="+brief;
+	    window.location.href = `mailto:?subject=Результат теста для ${document.getElementById("name").value}&body=`+brief;
 	}
 
 	setTimeout(download, 10, brief, 'extrafile.txt', 'text/plain');
