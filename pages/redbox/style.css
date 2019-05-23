@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/3966.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('./fonts/3962.ttf');
+}
+
+
+* {	margin: 0; padding: 0; }
+header {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	height: 100%;
+	background: #141414;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.header-nav { 
+	font-family: 'Roboto Light', sans-serif;
+	width: 100%; 
+	font-size: 22px;
+}
+
+.header-nav {
+	padding-top: 20px;
+}
+
+.header-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header a:nth-of-type(1) {
+  margin-right: 3%;
+}
+
+header a:nth-of-type(3) {
+  float: right;
+}
+
+.logo {	
+	padding-right: 5%; 
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
