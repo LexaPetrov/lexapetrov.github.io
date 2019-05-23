@@ -50,6 +50,7 @@ header {
 	float: right;
 }
 
+
 .works-items img {
 	border-radius: 50%;
 	height: 50%; width: 40%;
@@ -124,3 +125,31 @@ header {
 .footer-links img:hover {
 	opacity: 0.5;
 }
+
+
+
+
+@media screen and (min-width: 1367px) and (max-width: 2700px) {
+	.works-items-list li{
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 5%;
+	padding: 1%;
+	margin-left: 1%;
+}
+
+}
+
+/*@media screen and (max-width: 1330px) {
+	.works-items-list li{
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 5%;
+	padding: 1%;
+	margin-left: 1%;
+}
+}*/

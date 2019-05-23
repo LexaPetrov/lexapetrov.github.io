@@ -1,4 +1,4 @@
-dist/psd
-portfolio_projects\modern_website\psd
-portfolio_projects\mycompany_website\psd
-\portfolio_projects\dart_service\PSD
+main/dist/psd
+main/pages\modern_website\psd
+main/pages\mycompany_website\psd
+main/pages\dart_service\PSD
