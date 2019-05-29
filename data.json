@@ -1,0 +1,38 @@
+data = [
+		{//1
+			"img": "./dist/img/mycompany.png",
+			"title": "mycompany",
+			"link": "pages/mycompany/"
+		},
+
+		{//2
+			"img": "./dist/img/kontrcassa.png",
+			"title": "контркасса",
+			"link": "pages/kontrcassa/"
+		},
+
+		{//3
+			"img": "./dist/img/redbox.png",
+			"title": "redbox",
+			"link": "pages/redbox/"
+		},
+
+		{//4
+			"img": "./dist/img/educationtest.png",
+			"title": "тест по ИБ",
+			"link": "pages/educationtest/"
+		},
+
+		{//5
+			"img": "./dist/img/modern.png",
+			"title": "modern",
+			"link": "pages/modern/"
+		},
+
+		{//6
+			"img": "./dist/img/dart.png",
+			"title": "dart",
+			"link": "pages/dart_service/"
+		},
+		// 
+]
