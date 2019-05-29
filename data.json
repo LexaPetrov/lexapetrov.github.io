@@ -34,5 +34,11 @@ data = [
 			"title": "dart",
 			"link": "pages/dart_service/"
 		},
+
+		{//7
+			"img": "./dist/img/donate.png",
+			"title": "задонатить",
+			"link": "https://rocketbank.ru/aleksey-petrov-sparkling-hill"
+		},
 		// 
 ]
