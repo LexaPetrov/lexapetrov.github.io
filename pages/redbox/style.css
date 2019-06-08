@@ -227,18 +227,56 @@ header a:nth-of-type(3) {
 
 
 
+.ocean {
+	padding-top: 120px;
+	max-width: 100%;
+	background: #22415e;
+	padding-bottom: 0;
+	
+}
+
+.ocean-text {
+	max-width: 100%;
+	padding-left: 19%;
+}
+
+.ocean-text h1{
+	max-width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 72px;
+	color: #fff;
+}
+
+.ocean-text p{
+	max-width: 100%;
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 27px;
+	color: #fafafa;
+	padding-top: 55px;
+}
+
+.ocean-photo {
+	max-width: 100%;
+	padding-top: 86px;
+	padding-left: 11%;
+	padding-right: 11%;
+}
+
+.ocean-photo img {
+	max-width: 100%;
+	margin-bottom: -4px;
+}
 
 
+.feedback {
+	font-family: 'Roboto';
+	max-width: 100%;
+	padding: 160px 20% 150px 20%;
+}
 
-
-
-
-
-
-
-
-
-
+.feedback h1 {	font-size: 72px; }
+.feedback p { font-size: 27px; }
 
 
 
