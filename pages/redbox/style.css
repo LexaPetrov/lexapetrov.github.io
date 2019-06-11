@@ -275,15 +275,56 @@ header a:nth-of-type(3) {
 	padding: 160px 20% 150px 20%;
 }
 
-.feedback h1 {	font-size: 72px; }
-.feedback p { font-size: 27px; }
+.feedback h1 { max-width: 100%; padding-bottom: 55px;	font-size: 72px; }
+.feedback p { max-width: 100%;  font-size: 27px; }
+.feedback ul {
+	margin-top: 100px;
+	list-style-type: none;
+}
+.feedback li {
+	max-width: 100%;
+	padding-bottom: 30px;
+}
+.feedback input {
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-left: 40px;
+	width: 100%;
+	font-size: 27px;
+	border-radius: 15px;
+	border: 3px solid #000;
+}
+.feedback button {
+	padding: 30px 85px;
+	background: #ed1f24;
+	border-radius: 15px;
+	font-size: 27px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
 
+.feedback-last p {
+	font-size: 16px;
+	color: #9a9a9a;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
 
+.feedback-last label {padding-left: 20px;font-size: 27px;}
 
-
-
-
-
+.feedback-last input {
+	width: 27px;
+	height: 27px;
+	margin: 0; padding: 0;
+	
+	
+}
+.checkbox {
+	transform:scale(1.5);
+	color: black;
+	border-radius: 10px;
+	border: 3px solid black;
+}
 
 
 
@@ -363,6 +404,14 @@ footer {
 	.footer-2 {
 		margin: 0;
 	}
+
+	.checkbox {
+	transform:scale(1.0);
+	color: black;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+
 }
 
 
