@@ -192,19 +192,18 @@ header a:nth-of-type(3) {
 }
 
 .smarty-tv {
-	display: flex;
 	
 	padding-left: 150px;
 }
 
 .smarty-tv img{
 
-	display: flex;
+	
 	max-width: 100%;	
 }
 
 .smarty-item {
-	display: flex;
+	
 	padding-top: 50px;
 	padding-left: 30%;
 	text-align: center;
