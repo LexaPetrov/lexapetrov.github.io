@@ -544,3 +544,19 @@ footer {
 	.possibilities-list h1 { font-size: 36px; }
 
 }
+
+
+@media screen and (max-width: 372px){ 
+	.footer-3 p { font-size: 14px; }
+	.custom h1 {font-size: 30px;}
+	.custom p {font-size: 14px;}
+	.custom a {
+		padding: 1% 1%;
+		font-size: 11px;
+	}
+	.smarty-tv {display: none;}
+	.smarty-info {text-align: center;}
+	.smarty-more {padding-top: 25px;}
+	.smarty-more a {font-size: 14px;}
+	.smarty-info p {margin-top: 20px; font-size: 14px;}
+}
