@@ -8,6 +8,9 @@
   src: url('./fonts/3962.ttf');
 }
 
+ul {
+	list-style-type: none;
+}
 
 * {	margin: 0; padding: 0; }
 header {
@@ -132,7 +135,6 @@ header a:nth-of-type(3) {
 .possibilities-list-2 ul{
 	font-family: 'Roboto Light', sans-serif;
 	font-size: 20px;
-	list-style-type: none;
 	color: #fff;
 
 }
@@ -191,34 +193,16 @@ header a:nth-of-type(3) {
 	margin-top: 123px;
 }
 
-.smarty-tv {
-	
-	padding-left: 150px;
-}
-
-.smarty-tv img{
-
-	
-	max-width: 100%;	
-}
-
+.smarty-tv {margin-left: 150px;}
+.smarty-tv img{max-width: 100%;	}
 .smarty-item {
-	
 	padding-top: 50px;
 	padding-left: 30%;
 	text-align: center;
 	padding-bottom: 70px;
 }
-
-.smarty-item  img{
-	max-width: 100%;
-}
-
-.smarty-more {
-	padding-top: 125px;
-	
-}
-
+.smarty-item  img{max-width: 100%;}
+.smarty-more {padding-top: 125px;}
 .smarty-more a {
 	color: #fff;
 	font-size: 22px;
@@ -229,7 +213,67 @@ header a:nth-of-type(3) {
 	border-radius: 13px;
 }
 
+.custom {
+	font-family: 'Roboto', sans-serif;
+	max-width: 100%;
+	padding-top: 5%;	
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 4%;
+	display: flex;
+	flex-direction: row;
+}
 
+.custom h1 {
+	font-size: 72px;
+	max-width: 100%;
+	font-weight: bolder;
+}
+
+.custom p {
+	padding-top: 45px;
+	font-size: 27px;
+	padding-bottom: 115px;
+}
+
+.custom-text a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 2% 7%;
+}
+
+.custom-text li:nth-of-type(2){
+	padding-top: 65px;
+}
+
+.custom-img {
+	max-width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+}
+
+.custom-img img{
+	 width: 100%;
+  height: auto;
+}
+
+.custom-img a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 0;
+	margin-top: 100px;
+	width: 60%;
+	margin-left: 20%;
+	padding: 2% 7%;
+}
 
 .ocean {
 	padding-top: 120px;
@@ -281,14 +325,8 @@ header a:nth-of-type(3) {
 
 .feedback h1 { max-width: 100%; padding-bottom: 55px;	font-size: 72px; }
 .feedback p { max-width: 100%;  font-size: 27px; }
-.feedback ul {
-	margin-top: 100px;
-	list-style-type: none;
-}
-.feedback li {
-	max-width: 100%;
-	padding-bottom: 30px;
-}
+.feedback ul {	margin-top: 100px; }
+.feedback li {max-width: 100%;padding-bottom: 30px;}
 .feedback input {
 	padding-bottom: 25px;
 	padding-top: 25px;
@@ -350,10 +388,6 @@ footer {
 	margin-right: 156px;
 }
 
-.footer-2 ul {
-	list-style-type: none;
-}
-
 .footer-2 a {
 	text-decoration: none;
 	color: #fff;
@@ -377,6 +411,9 @@ footer {
 	padding-bottom: 10px;
 }
 
+
+
+/********************************************************/
 @media screen and (max-width: 1300px){
 	.firstblock {
 	max-width: 100%;
@@ -391,7 +428,7 @@ footer {
 }
 }
 
-
+/********************************************************/
 @media screen and (max-width: 1140px){
 	* { max-width: 100%; }
 
@@ -404,11 +441,16 @@ footer {
 		padding-bottom: 30px;
 		padding-top: 40px;
 	}
-
-	.footer-2 {
-		margin: 0;
+	.footer-2 {	margin: 0;}
+	.custom {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
 	}
-
+	.custom-img {
+		margin-left: 0;
+		margin-top: 40px;
+	}
 	.checkbox {
 	transform:scale(1.0);
 	color: black;
@@ -419,7 +461,7 @@ footer {
 }
 
 
-
+/********************************************************/
 @media screen and (max-width: 960px){
 	.firstblock {
 		padding-top: 10px;
@@ -431,43 +473,27 @@ footer {
 	}
 
 	* {	margin: 0px; padding: 0px 0px 0px 0px;}
-
-	.logo {
-		text-align: center;
-	}
-	
-	.header-nav {
-		padding: 0;margin: 0;
-	}
-
-	header a:nth-of-type(3) {
- 		 float: left;
-	}
-	
-	.content-description {
-		padding: 0px 0px 0px 0px;
-	}
-
+	.logo {	text-align: center;	}
+	.header-nav {padding: 0;margin: 0;}
+	header a:nth-of-type(3) { float: left;}
+	.content-description {padding: 0px 0px 0px 0px;	}
 	.content-description p{
 		float: left;
 		font-size: 16px;
 	}
-	.content-decription-links a {
-
-		font-size: 15px;
+	.content-decription-links a {font-size: 15px;}
+	.smarty-tv {margin-top: 50px;}
+	.smarty { 
+		display: flex;
+		flex-direction: column;
+		align-content: center; 
 	}
-	
-	.smarty-tv {display: none;}
-
-	.smarty { align-content: center; }
-
 	.smarty-more { text-align: center; }
-	.smarty-more a {
-		font-size: 20px;
-	}
-	.content-item img {
-		width: auto;
-  height: auto;
+	.smarty-more a {font-size: 20px;}
+	.content-item img {	width: auto; height: auto;	}
+	.custom {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.possibilities-list-2 {
@@ -481,47 +507,26 @@ footer {
 	.ocean, .feedback, .possibilities, .smarty {
 		padding-top: 20px;
 	}
-
-	.ocean-text h1 {
-		font-size: 36px;
-	}
-
-	.ocean-text p {
-		font-size: 20px;
-	}
-
+	.ocean-text h1 {font-size: 36px;}
+	.ocean-text p {font-size: 20px;	}
 	.possibilities-list-2 span {
 		font-size: 15px;
 		padding-left: 30px;
 	} 
-
 	.feedback h1 {	font-size: 36px; }
-	.feedback  ul, button, label {
-		font-size: 20px;
-	}
-
+	.feedback  ul, button, label {font-size: 20px;}
 	.feedback { padding-bottom: 20px; }
-	
 	.feedback input[type=text] {
 		height: 25px;
 		font-size: 16px;
 		width: 100%;
 		padding: 0;
 	}
-	
-	.feedback label {
-		font-size: 16px;
-	}
-
+	.feedback label {font-size: 16px;}
 	.feedback-last p { font-size: 10px;	}
-	
-	.feedback input[type=checkbox] {
-		height: 20px;
-	}
-
+	.feedback input[type=checkbox] {height: 20px;}
 	.possibilities-list-2-2 { padding: 0; }
 	.possibilities-list-2 img { width: 15px;height: 15px; }
-	
 	.possibilities-list { margin: 0; padding: 0px 0px 0px 0px; }
 	.possibilities-list h1 { font-size: 36px; }
 
