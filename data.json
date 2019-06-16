@@ -6,22 +6,23 @@ data = [
 		},
 
 		{//2
-			"img": "./dist/img/kontrcassa.jpg",
-			"title": "контркасса",
-			"link": "pages/kontrcassa/"
-		},
-
-		{//3
 			"img": "./dist/img/redbox.jpg",
 			"title": "redbox",
 			"link": "pages/redbox/"
 		},
 
-		{//4
+		{//3
 			"img": "./dist/img/educationtest.png",
 			"title": "тест по ИБ",
 			"link": "pages/educationtest/"
 		},
+
+		{//4
+			"img": "./dist/img/kontrcassa.jpg",
+			"title": "контркасса",
+			"link": "pages/kontrcassa/"
+		},
+
 
 		{//5
 			"img": "./dist/img/modern.jpg",
