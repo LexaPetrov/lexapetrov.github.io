@@ -526,6 +526,16 @@ footer {
 }
 
 @media screen and (max-width: 1366px){
+	.mid2-3 img {width: 13%;}
+	.mid2-3 {
+	    margin: 0 auto;
+	    margin-left: 100px;
+	    position:relative;
+	}
+	.mid2-3 img:nth-of-type(2){
+		float: right;
+		margin-right: 100px;
+	}
 	.mid2_5img  img {max-width: 50%; position: relative; margin-top: -80px;}
 	.mid2img  img {max-width: 50%; position: relative; margin-top: 50px;}
 	.mid2img1  img {max-width: 50%; position: relative;}
