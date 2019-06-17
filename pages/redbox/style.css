@@ -344,8 +344,17 @@ header a:nth-of-type(3) {
 	font-size: 27px;
 
 }
-.mid2-1 p, .mid2-3 p {
+.mid2-1, .mid2-3 {
 	position: relative;
+}
+.mid2-3 {
+	    background: green;
+    height:200px;
+    width:300px;
+    margin: 0 auto;
+    position:relative;
+    left:30%;
+    top: 90%;
 }
 .mid2-1 p:nth-of-type(2){
 
