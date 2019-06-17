@@ -15,7 +15,7 @@ ul {
 main {
 	background: #fafafa;
 }
-
+/**/
 * {	margin: 0; padding: 0; }
 header {
 	display: flex;
@@ -339,7 +339,7 @@ header a:nth-of-type(3) {
 	font-size: 27px;
 	color: #fafafa;
 }
-.mid2-3 img {width: 25%;}
+.mid2-3 img {width: 10%;}
 .mid2-3 {
     margin: 0 auto;
     margin-left: 400px;
@@ -572,7 +572,8 @@ footer {
 		margin-left: 0;
 		margin-top: 40px;
 	}
-
+	.mid2img1 {margin: 0;}
+	.mid2_5img {padding:20px 0px 0px 0px;}
 	.mid2-3 img {width: 20%;}
 	.mid2-3 {
  	   margin: 0 auto;
@@ -707,6 +708,7 @@ footer {
 		float: right;
 		margin-right: 150px;
 	}
+	.mid2img1 {margin: 0;}
 	.feedback p {font-size: 20px;}
 	.feedback h1 {	font-size: 36px; padding-bottom: 20px;}
 	.feedback  ul {margin-top: 20px;}
@@ -747,6 +749,7 @@ footer {
 	.possibilities-list-2-2 li:nth-of-type(1) {
 		margin-top: 5px;
 	}
+	.mid2img1 {margin: 0;}
 	.mid2-3 img {width: 20%;}
 	.mid2-3 {
  	   margin: 0 auto;
@@ -768,6 +771,7 @@ footer {
 	.mid3 a {margin-right: 10px;}
 	.mid1 p {margin-top: 20px;}
 	.mid3 p {padding: 20px 0px;}
+	.mid2img1 {margin: 0;}
 	.mid2img1 img {margin-top: -15px;}
 	.mid3-text {padding: 0; margin: 0; text-align: center;}
 	.mid2_5img {padding:60px 0px 0px 0px;}
