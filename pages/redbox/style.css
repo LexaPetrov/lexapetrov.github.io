@@ -154,12 +154,14 @@ header a:nth-of-type(3) {
 .possibilities-list-2 {
 	display: flex;
 	padding-top: 125px;
+	line-height: 1.5;
 }
 
 .possibilities-list-2 ul{
 	font-family: 'Roboto Light', sans-serif;
 	font-size: 20px;
 	color: #fff;
+	position: relative;
 
 }
 .possibilities-list-2 li{display: block;}
@@ -280,7 +282,7 @@ header a:nth-of-type(3) {
 }
 .adaptive p {
 	font-size: 27px; color: #cfcfcf;
-	margin-top: 45px;
+	margin-top: 25px;
 	padding-bottom: 130px;
 	overflow: visible;
 	position: relative;
@@ -328,6 +330,7 @@ header a:nth-of-type(3) {
 	font-size: 27px;
 	color: #fafafa;
 	padding-top: 55px;
+	line-height: 1.6;
 }
 
 .ocean-photo {
@@ -361,6 +364,7 @@ header a:nth-of-type(3) {
 	font-family: 'Roboto Regular';
 	font-size: 27px;
 	color: #fafafa;
+	line-height: 1.5;
 }
 .mid2-3 img {width: 10%;}
 .mid2-3 {
@@ -454,6 +458,7 @@ header a:nth-of-type(3) {
 	font-family: 'Roboto Regular', sans-serif;
 	max-width: 100%;  
 	font-size: 27px; 
+	line-height: 1.5;
 }
 .feedback ul {
 	font-family: 'Roboto Regular', sans-serif;
@@ -959,4 +964,32 @@ footer {
 		color: #0070c9;
 		text-decoration: none;
 	}
+
+	.google_play span {margin-top: -18%;}
+.web_browser span {
+	position: relative;
+	width: 100%;
+ margin-top: -17%;}
+ .emmc span {width: 100%; margin-top: -12%;}
+ .micro_sd span {width: 100%; margin-top: -14%;}
+
+ .possibilities-list-2 ul{
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	position: relative;
+
+}.possibilities-list-2 ul{
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	position: relative;
+
+}
+
+.possibilities-list-2 li {padding-bottom: 120px;}
+.hevc span {margin-top: -12%;}
+.d3 span {margin-top: -11%;}
+.wifi span {margin-top: -15%;}
+.nas span {margin-top: -15%;}
 }
