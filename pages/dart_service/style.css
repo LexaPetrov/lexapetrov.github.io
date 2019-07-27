@@ -8,10 +8,19 @@
   src: url('./fonts/raleway/Raleway-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('./fonts/raleway/Raleway-Medium.ttf');
+}
+
+
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
 
 #main-content {
 /*	display: flex;
@@ -66,7 +75,6 @@ font-family: "Raleway Semibold", sans-serif; }
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 0 30%;
 	padding-top: 50px;
 	padding-bottom: 100px;
 }
@@ -78,12 +86,43 @@ font-family: "Raleway Semibold", sans-serif; }
 	padding-bottom: 50px;
 }
 
+.contactus-inputs {
+	border: 1px solid #000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	border-radius: 5px;
+	color: #000;
+	padding-right: 180px;
+	padding-left: 20px;
+	font-family: 'Raleway Medium', sans-serif;
+}
 
+.contactus-1 input:nth-of-type(2) {
+	margin-left: 40px;
+}
 
+.contactus-2 input:nth-of-type(2) {
+	margin-left: 40px;
+}
 
+.contactus-1 {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.contactus-2 {
+	max-width: 100%;
+	margin: 20px 0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
 
 .contactus-3 {
-	width: 100%;
+	
 }
 .contactus-4 {
 	display: flex;
@@ -145,3 +184,55 @@ font-family: "Raleway Semibold", sans-serif; }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************/
+@media screen and (max-width: 768px){
+		
+	* {
+		margin: 0; padding: 0;
+	}
+
+	.contactus-1 input:nth-of-type(2) {
+	margin-left: 0px;
+	}
+
+	.contactus-2 input:nth-of-type(2) {
+	margin-left: 0px;
+	}
+
+	.contactus-1 {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contactus-2 {
+	max-width: 100%;
+	margin: 20px 0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+}
