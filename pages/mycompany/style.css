@@ -329,7 +329,7 @@ h1:after{
 }
 
 .contact__wrapper {
-	width: 753px;
+	width: 100%;
 	margin: 0 auto;
 	color: #636363
 }
@@ -448,11 +448,9 @@ form {
 
 
 
-	.contact__form { max-width: 100%; }
-	.contact__wrapper { max-width: 100%; text-align: center; }
 
-	.contact__form form { max-width: 100%; text-align: center;}
-  		main .main__welcome {
+
+		main .main__welcome {
 			padding: 50px 0 50px 0;
 		}
 
@@ -554,11 +552,6 @@ form {
 
 	}
 
-	.form__inputs {	text-align: center;
-	max-width: 100%; }
-	.form__inputs p {
-		text-align: center;
-	}
 }
 
 
