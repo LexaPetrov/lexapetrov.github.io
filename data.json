@@ -18,7 +18,7 @@ data = [
 		},
 
 		{//4
-			"img": "./dist/img/.jpg",
+			"img": "./dist/img/takeme.jpg",
 			"title": "take me",
 			"link": "pages/takeme/"
 		},

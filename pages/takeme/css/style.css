@@ -77,14 +77,40 @@
 	color: #868686;
 }
 
-/** { opacity: 0.85; }
+/** { opacity: 0.85; } */
 
 body {
 	background-image: url("../img/b3_grid.png");
 	background-position: center; 
 	background-repeat: repeat-y;
 	background-color: #D7D7D7;
-}*/
+}
+
+nav {
+	display: inline;
+	background-color: #fff;
+}
+
+.logo-text {
+	float: left;
+	display: block;
+	color: #3ec6ff;
+	font-size: 48px;
+	font-family: 'Kaushan-Script-Regular', sans-serif;
+}
+
+.logo-links {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 18px;
+	color: #343434;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline;
+	float: right;
+}
+
 
 .header1 {
 	padding-top: 226px;
