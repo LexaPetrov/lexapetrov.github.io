@@ -14,11 +14,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
         div += `</div>`;
         div += `</div>`;
         document.getElementById("postsContent").innerHTML += div;
-
     }
-    // for (let i = 0; i < sites.length; i++) {
-    //     data[i].tags.split(" ")[i].toUpperCase();
-    // }
     sendMail = () => window.location.href = `mailto:al1111997@yandex.ru`;
-
 });
+
+function expandContent (){
+    let x = document.getElementById('content');
+    if (x.className === "content") {
+        document.getElementById("expand").innerHTML = "сделать контент снизу ⬇️";
+        x.className += "Expanded";
+    } else {
+        document.getElementById("expand").innerHTML = "сделать контент справа ➡️";
+        x.className = "content";
+    }
+};

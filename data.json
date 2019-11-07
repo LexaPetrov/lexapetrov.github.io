@@ -1,7 +1,7 @@
 data = [
   {
     "id": 0,
-    "img": "./dist/img/mycompany.jpg",
+    "img": "./dist/img/mycompany480.jpg",
     "title": "PSD-макет 'mycompany'",
     "link": "pages/mycompany/",
     "description": "Вёрстка макета из Интернета.",
@@ -10,7 +10,7 @@ data = [
   },
   {
     "id": 1,
-    "img": "./dist/img/redbox.jpg",
+    "img": "./dist/img/redbox480.jpg",
     "title": "PSD-макет 'redbox'",
     "link": "pages/redbox/",
     "description": "Вёрстка макета для компании Microimpuls.",
@@ -19,7 +19,7 @@ data = [
   },
   {
     "id": 2,
-    "img": "./dist/img/educationtest.png",
+    "img": "./dist/img/educationtest480.jpg",
     "title": "Веб JS-приложение 'тест по ИБ'",
     "link": "pages/educationtest/",
     "description": "Тест для учащихся школ и вузов в области информационной безопасности. Реализовано без сервера, но есть возможность сохранять результат в специальном коде.",
@@ -28,7 +28,7 @@ data = [
   },
   {
     "id": 3,
-    "img": "./dist/img/takeme.jpg",
+    "img": "./dist/img/takeme480.jpg",
     "title": "PSD-макет 'take me'",
     "link": "pages/takeme/",
     "description": "Вёрстка макета из Интернета.",
@@ -37,7 +37,7 @@ data = [
   },
   {
     "id": 4,
-    "img": "./dist/img/kontrcassa.jpg",
+    "img": "./dist/img/kontrcassa480.jpg",
     "title": "PSD-макет 'контркасса'",
     "link": "pages/kontrcassa/",
     "description": "Вёрстка макета для компании 'Web-Строитель'",
@@ -46,7 +46,7 @@ data = [
   },
   {
     "id": 5,
-    "img": "./dist/img/modern.jpg",
+    "img": "./dist/img/modern480.jpg",
     "title": "PSD-макет 'modern'",
     "link": "pages/modern/",
     "description": "Вёрстка макета из Интернета.",
@@ -55,7 +55,7 @@ data = [
   },
   {
     "id": 6,
-    "img": "./dist/img/dart.jpg",
+    "img": "./dist/img/dart240.jpg",
     "title": "PSD-макет 'dart service manager'",
     "link": "pages/dart_service/",
     "description": "Вёрстка макета из Интернета.",
@@ -64,7 +64,7 @@ data = [
   },
   {
     "id": 7,
-    "img": "./dist/img/donate2.png",
+    "img": "./dist/img/donate.png",
     "title": "Поддержать копеечкой",
     "link": "https://rocketbank.ru/aleksey-petrov-sparkling-hill",
     "description": `Здесь можно отправить мне деньги на

@@ -1,3 +1,37 @@
+input.apple-switch {
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #fff;
+}
+
+input.apple-switch:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input.apple-switch:checked {
+    box-shadow: inset 20px 0 0 0 #4ed164;
+    border-color: #4ed164;
+}
+
+input.apple-switch:checked:after {
+    left: 20px;
+    box-shadow: -2px 4px 3px rgba(0, 0, 0, 0.05);
+}
+
 @font-face {
     font-family: 'HelveticaRegular';
     src: url('./dist/fonts/HelveticaRegular.otf');
@@ -9,7 +43,7 @@
     padding: 0;
 }
 
-body  {
+body {
     margin: 0 auto;
     background-color: #fff;
 }
@@ -36,14 +70,14 @@ body  {
     width: 36px;
 }
 
-.sendMail a {
+.sendMail a, #expand {
     text-decoration: none;
     color: #000;
     font-size: 18px;
 }
 
-.separateLine {
-
+.changeTheme span {
+    font-size: 40px;
 }
 
 .postsContent {
@@ -93,7 +127,7 @@ body  {
 .postText {
     align-items: center;
     height: 100%;
-    position:relative; /* добавили */
+    position: relative; /* добавили */
     color: #1f111f;
     display: flex;
     flex-direction: column;
@@ -110,8 +144,8 @@ body  {
     color: #6babff;
     margin-bottom: 25px;
     font-size: 10px;
-    position:absolute; /* добавили */
-    bottom:0; /* добавили */
+    position: absolute; /* добавили */
+    bottom: 0; /* добавили */
 }
 
 .postTags {
@@ -121,8 +155,8 @@ body  {
     border-radius: 5px;
     color: #fff;
     opacity: 0.5;
-    position:absolute; /* добавили */
-    bottom:0; /* добавили */
+    position: absolute; /* добавили */
+    bottom: 0; /* добавили */
 }
 
 .content {
@@ -135,6 +169,10 @@ body  {
     /*justify-content: center;*/
 }
 
+.contentExpanded {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 @media screen and (max-width: 656px ) {
     .content {
@@ -153,7 +191,7 @@ body  {
         filter: invert();
     }
 
-    .sendMail a {
+    .sendMail a, #expand {
         color: #5fa9ee;
     }
 
@@ -162,7 +200,7 @@ body  {
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
     .postTitle {
         margin-bottom: 10px;
     }
@@ -170,11 +208,17 @@ body  {
     .postTags {
         font-size: 10px;
     }
+
     .postDescription {
         font-size: 12px;
     }
+
+    #expand {
+        display: none;
+    }
 }
-@media screen and (min-width:321px) and (max-width:639px) {
+
+@media screen and (min-width: 321px) and (max-width: 639px) {
     .postTitle {
         margin-bottom: 10px;
     }
@@ -182,13 +226,31 @@ body  {
     .postTags {
         font-size: 10px;
     }
+
     .postDescription {
         margin-top: 15px;
         font-size: 14px;
     }
+
+    #expand {
+        display: none;
+    }
 }
-@media screen and (min-width:640px) and (max-width:959px) {}
-@media screen and (min-width:960px) and (max-width:1279px) {}
-@media screen and (min-width:1280px) and (max-width:1599px) {}
-@media screen and (min-width:1600px) {}
-@media screen and (min-width:1920px) {}
+
+@media screen and (min-width: 640px) and (max-width: 959px) {
+    #expand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+}
+
+@media screen and (min-width: 1600px) {
+}
+
+@media screen and (min-width: 1920px) {
+}
