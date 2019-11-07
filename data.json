@@ -1,51 +1,75 @@
 data = [
-		{//1
-			"img": "./dist/img/mycompany.jpg",
-			"title": "mycompany",
-			"link": "pages/mycompany/"
-		},
-
-		{//2
-			"img": "./dist/img/redbox.jpg",
-			"title": "redbox",
-			"link": "pages/redbox/"
-		},
-
-		{//3
-			"img": "./dist/img/educationtest.png",
-			"title": "тест по ИБ",
-			"link": "pages/educationtest/"
-		},
-
-		{//4
-			"img": "./dist/img/takeme.jpg",
-			"title": "take me",
-			"link": "pages/takeme/"
-		},
-
-		{//5
-			"img": "./dist/img/kontrcassa.jpg",
-			"title": "контркасса",
-			"link": "pages/kontrcassa/"
-		},
-
-
-		{//6
-			"img": "./dist/img/modern.jpg",
-			"title": "modern",
-			"link": "pages/modern/"
-		},
-
-		{//7
-			"img": "./dist/img/dart.jpg",
-			"title": "dart",
-			"link": "pages/dart_service/"
-		},
-
-		{//8
-			"img": "./dist/img/donate2.png",
-			"title": "задонатить",
-			"link": "https://rocketbank.ru/aleksey-petrov-sparkling-hill"
-		},
-		// 
+  {
+    "id": 0,
+    "img": "./dist/img/mycompany.jpg",
+    "title": "PSD-макет 'mycompany'",
+    "link": "pages/mycompany/",
+    "description": "Вёрстка макета из Интернета.",
+    "date": "2017",
+    "tags": "#photoshop #html #css"
+  },
+  {
+    "id": 1,
+    "img": "./dist/img/redbox.jpg",
+    "title": "PSD-макет 'redbox'",
+    "link": "pages/redbox/",
+    "description": "Вёрстка макета для компании Microimpuls.",
+    "date": "2019",
+    "tags": "#photoshop #html #css"
+  },
+  {
+    "id": 2,
+    "img": "./dist/img/educationtest.png",
+    "title": "Веб JS-приложение 'тест по ИБ'",
+    "link": "pages/educationtest/",
+    "description": "Тест для учащихся школ и вузов в области информационной безопасности. Реализовано без сервера, но есть возможность сохранять результат в специальном коде.",
+    "date": "2019",
+    "tags": "#html #css #javascript #gh-pages"
+  },
+  {
+    "id": 3,
+    "img": "./dist/img/takeme.jpg",
+    "title": "PSD-макет 'take me'",
+    "link": "pages/takeme/",
+    "description": "Вёрстка макета из Интернета.",
+    "date": "2019",
+    "tags": "#photoshop #html #css"
+  },
+  {
+    "id": 4,
+    "img": "./dist/img/kontrcassa.jpg",
+    "title": "PSD-макет 'контркасса'",
+    "link": "pages/kontrcassa/",
+    "description": "Вёрстка макета для компании 'Web-Строитель'",
+    "date": "2018",
+    "tags": "#photoshop #html #css"
+  },
+  {
+    "id": 5,
+    "img": "./dist/img/modern.jpg",
+    "title": "PSD-макет 'modern'",
+    "link": "pages/modern/",
+    "description": "Вёрстка макета из Интернета.",
+    "date": "2018",
+    "tags": "#photoshop #html #css"
+  },
+  {
+    "id": 6,
+    "img": "./dist/img/dart.jpg",
+    "title": "PSD-макет 'dart service manager'",
+    "link": "pages/dart_service/",
+    "description": "Вёрстка макета из Интернета.",
+    "date": "2019",
+    "tags": "#photoshop #html #css"
+  },
+  {
+    "id": 7,
+    "img": "./dist/img/donate2.png",
+    "title": "Поддержать копеечкой",
+    "link": "https://rocketbank.ru/aleksey-petrov-sparkling-hill",
+    "description": `Здесь можно отправить мне деньги на
+    карту,  они мне помогут развиваться в творчестве`,
+    "date": "∞",
+    "tags": "#помощь #рокетбанк #донат"
+  }
 ]

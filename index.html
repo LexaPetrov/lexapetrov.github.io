@@ -2,11 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Алексей Петров | портфолио</title>
+    <title>Алексей Петров | блог и портфолио</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--    <script src="./script.js"></script>-->
+    <script src="./script.js"></script>
     <script type="text/javascript" src="data.json"></script>
+    <script>
+        expand = () => {
+            let content = document.getElementById("content");
+            // if ( content.style.flexWrap === "wrap" ) {
+            //     content.style.flexWrap = "";
+                content.style.flexWrap = "no-wrap";
+            // } else {
+            //     content.style.flexWrap = "wrap"
+            // }
+
+        }
+    </script>
 </head>
 <body id="body">
 <div class="content" id="content">
@@ -24,9 +36,13 @@
             <a href="https://www.github.com/lexapetrov/"><img src="dist/img/github.png" alt=""></a>
         </div>
         <p class="sendMail"><a href="mailto:al1111997@yandex.ru">написать на почту</a></p>
+<!--        <button onclick="expand();">развернуть портфолио</button>-->
         <h2 style="margin-top: 30px; font-size: 40px;">портфолио находится на реконструкции 🛠</h2>
     </div>
-    <!-- сайты берутся из json :) -->
+    <div class="postsContent" id="postsContent">
+        <!-- посты берутся из json :) -->
+    </div>
+
 </div>
 </body>
 </html>

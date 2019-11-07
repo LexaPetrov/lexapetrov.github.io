@@ -1,19 +1,24 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    var sendMail;
-    var sites = JSON.parse(JSON.stringify(data));
-    console.log("Кол-во сайтов - " + sites.length);
-    for (var i = 0; i < sites.length; i++) {
-        var div = `<div class="projects-card">`;
-        div += `<img src="${sites[i].img}" />`;
-        div += `<h1>${sites[i].title}</h1>`;
-        div += `<p><button><a href="${sites[i].link}">открыть</a></button></p>`;
+    let sendMail;
+    let expand;
+    let sites = JSON.parse(JSON.stringify(data));
+    console.log("Кол-во постов - " + sites.length);
+    for (let i = 0; i < sites.length; i++) {
+        let div = `<div class="postsCard">`;
+        div += `<img src="${sites[i].img}" alt="postCard" />`;
+        div += `<div class="postText">`;
+        div += `<h1 class="postTitle"><a href="${sites[i].link}">${sites[i].title}</a></h1>`;
+        div += `<span class="postDescription">${sites[i].description}</span>`;
+        div += `<span class="postDate">Добавлено: ${sites[i].date}</span>`;
+        div += `<span class="postTags">${sites[i].tags}</span>`;
         div += `</div>`;
-        if (div !== undefined) {
-            document.getElementById("content").innerHTML += div;
-        }
+        div += `</div>`;
+        document.getElementById("postsContent").innerHTML += div;
 
     }
-    sendMail = function () {
-        window.location.href = `mailto:al1111997@yandex.ru`;
-    }
+    // for (let i = 0; i < sites.length; i++) {
+    //     data[i].tags.split(" ")[i].toUpperCase();
+    // }
+    sendMail = () => window.location.href = `mailto:al1111997@yandex.ru`;
+
 });
