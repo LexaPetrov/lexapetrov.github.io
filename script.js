@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let sites = JSON.parse(JSON.stringify(data));
     console.log("Кол-во постов - " + sites.length);
     sites.sort(function(a, b){
-        return a.id-b.id
+        return b.id-a.id
     })
     for (let i = 0; i < sites.length; i++) {
         let div = `<div class="postsCard">`;
@@ -30,5 +30,17 @@ function expandContent (){
         x.className = "content";
     }
 };
+
+function Blog() {
+    let posts = document.getElementById("postsContent")
+    let blog = document.getElementById("blogContent")
+    if (posts.style.display === "none"){
+        posts.style.display = "flex"
+        blog.style.display = "none"
+    } else {
+        posts.style.display = "none"
+        blog.style.display = "flex"
+    }
+}
 
 
