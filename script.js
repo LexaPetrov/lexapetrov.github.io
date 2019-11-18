@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     let sendMail;
-    let expand;
     let sites = JSON.parse(JSON.stringify(data));
     console.log("Кол-во постов - " + sites.length);
+    sites.sort(function(a, b){
+        return a.id-b.id
+    })
     for (let i = 0; i < sites.length; i++) {
         let div = `<div class="postsCard">`;
         div += `<img src="${sites[i].img}" alt="postCard" />`;
@@ -28,3 +30,5 @@ function expandContent (){
         x.className = "content";
     }
 };
+
+
