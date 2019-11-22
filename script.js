@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    if (window.location.hash.split('@')[0] === "#blog"){
+        Blog();
+        setTimeout(toPost, 1000);
+    }
+
     let sendMail;
     let sites = JSON.parse(JSON.stringify(data));
-    console.log("Кол-во постов - " + sites.length);
+    console.log("Кол-во сайтов - " + sites.length);
     sites.sort(function(a, b){
         return b.id-a.id
     })
@@ -18,6 +24,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("postsContent").innerHTML += div;
     }
     sendMail = () => window.location.href = `mailto:al1111997@yandex.ru`;
+
+    let post = JSON.parse(JSON.stringify(posts));
+    console.log("Кол-во постов блога - " + post.length);
+    for (let i = 0; i < post.length; i++) {
+        let div = `<div class="blogPost" id="${post[i].ref}">`;
+        div += ` <h1 class="blogPostTitle">${post[i].title}</h1>`;
+        div += ` <p class="blogPostDate">${post[i].date}</p>`;
+        div += `<p class="blogPostText">${post[i].text}</p>`;
+        div += `<p class="sourceLink"><a href="https://lexapetrov.github.io#blog@${post[i].ref}">ссылка на пост</a></p>`;
+        div += `</div>`;
+        document.getElementById("blogContent").innerHTML += div;
+    }
 });
 
 function expandContent (){
@@ -43,4 +61,8 @@ function Blog() {
     }
 }
 
+
+function toPost() {
+    document.getElementById(window.location.hash.split('@')[1]).scrollIntoView({behavior: "smooth"});
+}
 

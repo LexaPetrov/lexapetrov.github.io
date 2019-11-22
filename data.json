@@ -82,14 +82,3 @@ data = [
     "tags": "#photoshop #react"
   }
 ]
-
-posts = [
-  {
-    "id": " " ,
-    "ref": " ",
-    "title": " " ,
-    "date": " ",
-    "text": " "
-
-  }
-]
