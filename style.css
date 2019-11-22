@@ -160,6 +160,7 @@ body {
     opacity: 1;
     position: absolute; /* добавили */
     bottom: 0; /* добавили */
+    padding: 0 5px;
 }
 
 .content {
@@ -265,11 +266,15 @@ body {
 /*******************************BLOG*********************************/
 .blogContent {
     margin: auto;
-    width: 70%;
+    width: auto;
     display: none;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1920px;
+}
+
+.blogPost a {
+    color: #5fa9ee;
 }
 
 .blogPost {
@@ -291,4 +296,9 @@ body {
 
 .sourceLink a:visited {
     color: grey;
+}
+
+.blogImg  {
+    max-height: 100%;
+    max-width: 100%;
 }

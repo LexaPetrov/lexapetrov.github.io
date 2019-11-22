@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     sendMail = () => window.location.href = `mailto:al1111997@yandex.ru`;
 
     let post = JSON.parse(JSON.stringify(posts));
+    post.sort(function(a, b){
+        return b.id-a.id
+    })
     console.log("Кол-во постов блога - " + post.length);
     for (let i = 0; i < post.length; i++) {
         let div = `<div class="blogPost" id="${post[i].ref}">`;
