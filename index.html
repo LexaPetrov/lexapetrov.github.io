@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./script.js"></script>
-    <script type="text/javascript" src="data.json"></script>
-    <script type="text/javascript" src="posts.json"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="posts.js"></script>
 
 </head>
 <body id="body">
@@ -26,16 +26,16 @@
             <a href="https://www.github.com/lexapetrov/"><img src="dist/img/github.png" alt=""></a>
         </div>
         <p class="sendMail"><a href="mailto:al1111997@yandex.ru">написать на почту 📨</a></p>
-        <a href="#" onclick="javascript:expandContent();" id="expand">сделать контент справа ➡️</a>
+        <a href="#" onclick="expandContent()" id="expand">сделать контент справа ➡️</a>
         <div class="changeTheme">
             <span>👨‍🔧</span>
-            <input class="apple-switch" onclick="Blog();" type="checkbox">
+            <input class="apple-switch" onclick="Blog()" type="checkbox">
             <span>👨‍💻</span>
         </div>
 
     </div>
-    <div class="postsContent" id="postsContent"><!-- сайты берутся из json :) --></div>
-    <div class="blogContent" id="blogContent"><!-- посты берутся из json :) --></div>
+    <div class="postsContent" id="postsContent"><!-- сайты :) --></div>
+    <div class="blogContent" id="blogContent"><!-- посты :) --></div>
 </div>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
