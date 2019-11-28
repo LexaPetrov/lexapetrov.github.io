@@ -113,14 +113,4 @@ slider.visible = true;</p>
         `
     }
 ];
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-=======
->>>>>>> 0ecaa12e88aec464904fefbdb370e0ffdba12bbf
