@@ -90,23 +90,21 @@ let posts = [
          <p>&nbsp;</p>
          <img src="./dist/img/blogimg3.png" class="blogImg" alt="">
         <p>&nbsp;</p>
-		<p style="text-align:center;">Код для подключения слайдера:</p>
-		<p style="text-align:center; font-size: 12px;" >const nativeUI = require("NativeUI"); </br>
-const materials = require("Materials");</br>
-
-let val = 0.5;</br>
-let mat = materials.get('material0');</br>
-
-const slider = nativeUI.slider;</br>
-
-slider.value.monitor({fireOnInitialValue:false}).subscribe((mod) => {</br>
-	val = mod.newValue;</br>
-	mat.opacity = val;</br>
-
-});</br>
-
-slider.value = 0.5;</br>
-slider.visible = true;</p>
+		<p>Код для подключения слайдера:</p>
+		<div style="max-width: 100%; font-size: 12px; text-wrap: " >
+		<p>const nativeUI = require("NativeUI");
+        <p>const materials = require("Materials");
+        <p>let val = 0.5;
+        <p>let mat = materials.get('material0');
+        <p>const slider = nativeUI.slider;
+        <p>slider.value.monitor({fireOnInitialValue:false})
+        <p>.subscribe((mod) => {
+        <p>val = mod.newValue;
+        <p>mat.opacity = val;
+        <p>});
+        <p>slider.value = 0.5;
+        <p>slider.visible = true;
+        </div>
          <p>Пока как-то так.</p>
          <p>Спасибо за внимание! Для материальной поддержки (буду очень рад)- 
      <a href="https://rocketbank.ru/aleksey-petrov-sparkling-hill">ТЫК</a>
