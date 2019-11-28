@@ -266,7 +266,7 @@ body {
 
 /*******************************BLOG*********************************/
 .blogContent {
-    margin: auto;
+    margin: 0 auto;
     width: auto;
     display: none;
     flex-wrap: wrap;
