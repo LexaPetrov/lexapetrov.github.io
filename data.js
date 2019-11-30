@@ -30,9 +30,9 @@ let data = [
   {
     "id": 3,
     "img": "./dist/img/kontrcassa_result.jpg",
-    "title": "PSD-макет для Web-Строитель 'контркасса'",
+    "title": "PSD-макет для Web-Строитель",
     "link": "pages/kontrkassa/",
-    "description": "Вёрстка макета для компании Web-Строитель",
+    "description": "Вёрстка макета 'контркасса' для компании Web-Строитель",
     "date": "апр 2018",
     "tags": "#photoshop #html #css"
   },
@@ -48,9 +48,9 @@ let data = [
   {
     "id": 5,
     "img": "./dist/img/redbox_result.jpg",
-    "title": "PSD-макет для Microimpuls 'redbox'",
+    "title": "PSD-макет для Microimpuls ",
     "link": "pages/redbox/",
-    "description": "Вёрстка макета для компании Microimpuls.",
+    "description": "Вёрстка макета 'redbox' для компании Microimpuls.",
     "date": "июл 2019",
     "tags": "#photoshop #html #css"
   },
@@ -77,7 +77,7 @@ let data = [
     "img": "./dist/img/prototype_result.jpg",
     "title": "PSD-макет для Softline",
     "link": "softlinepage/",
-    "description": "Вёрстка макета для компании Softline. Первый проект, написанный на React.",
+    "description": "Вёрстка макета 'allsoft 2019' для компании Softline. Первый проект, написанный на React.",
     "date": "ноя 2019",
     "tags": "#photoshop #react"
   }
