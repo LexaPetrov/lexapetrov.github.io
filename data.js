@@ -30,9 +30,9 @@ let data = [
   {
     "id": 3,
     "img": "./dist/img/kontrcassa_result.jpg",
-    "title": "PSD-макет 'контркасса'",
-    "link": "pages/kontrcassa/",
-    "description": "Вёрстка макета для компании 'Web-Строитель'",
+    "title": "PSD-макет для Web-Строитель 'контркасса'",
+    "link": "pages/kontrkassa/",
+    "description": "Вёрстка макета для компании Web-Строитель",
     "date": "апр 2018",
     "tags": "#photoshop #html #css"
   },
@@ -40,7 +40,7 @@ let data = [
     "id": 4,
     "img": "./dist/img/educationtest_result.png",
     "title": "Веб-приложение 'тест по ИБ'",
-    "link": "pages/educationtest/",
+    "link": "educationtest-js/",
     "description": "Тест для учащихся школ и вузов в области информационной безопасности. Реализовано без сервера, но есть возможность сохранять результат в специальном коде.",
     "date": "май 2019",
     "tags": "#html #css #javascript #gh-pages"
@@ -48,7 +48,7 @@ let data = [
   {
     "id": 5,
     "img": "./dist/img/redbox_result.jpg",
-    "title": "PSD-макет 'redbox'",
+    "title": "PSD-макет для Microimpuls 'redbox'",
     "link": "pages/redbox/",
     "description": "Вёрстка макета для компании Microimpuls.",
     "date": "июл 2019",
@@ -67,7 +67,7 @@ let data = [
     "id": 7,
     "img": "./dist/img/dart_result.jpg",
     "title": "PSD-макет 'dart service manager'",
-    "link": "pages/dart_service/",
+    "link": "pages/dart/",
     "description": "Вёрстка макета из Интернета.",
     "date": "авг 2019",
     "tags": "#photoshop #html #css"

@@ -1,0 +1,91 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1e;
+        color: #fefefe;
+    }
+
+    .links img {
+        filter: invert();
+    }
+
+    .sendMail a, #expand {
+        color: #5fa9ee;
+    }
+
+    img {
+        filter: grayscale(20%);
+    }
+
+    .blogPost {
+        color: #fefefe;
+        background: #292929;
+    }
+
+    .postsCard {
+        color: #fff;
+        background: #292929;
+    }
+
+    .postText {
+        color: #fefefe;
+    }
+
+    .postTitle  a{
+        color: #5fa9ee;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .postTitle {
+        margin-bottom: 10px;
+    }
+
+    .postTags {
+        font-size: 10px;
+    }
+
+    .postDescription {
+        font-size: 12px;
+    }
+
+    #expand {
+        display: none;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 639px) {
+    .postTitle {
+        margin-bottom: 10px;
+    }
+
+    .postTags {
+        font-size: 10px;
+    }
+
+    .postDescription {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    #expand {
+        display: none;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+    #expand {
+        display: none;
+    }
+}
+@media screen and (max-width: 656px ) {
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+}
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+}
+@media screen and (min-width: 1600px) {
+}
+@media screen and (min-width: 1920px) {
+}
