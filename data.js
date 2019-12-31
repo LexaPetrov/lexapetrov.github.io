@@ -80,5 +80,33 @@ let data = [
         "description": "Вёрстка макета 'allsoft 2019' для компании Softline. Первый проект, написанный на React.",
         "date": "ноя 2019",
         "tags": "#photoshop #react"
+    },
+     {
+        "id": 9,
+        "img": "./dist/img/todo_result.jpg",
+        "title": "TODO-list на React Native",
+        "link": "https://github.com/LexaPetrov/rn-todo-app/",
+        "description": "Список дел на RN + Firebase.",
+        "date": "дек 2019",
+        "tags": "#react-native"
+    },
+     {
+        "id": 10,
+        "img": "./dist/img/selfposts_result.jpg",
+        "title": "Личный блог с постами на React Native",
+        "link": "https://github.com/LexaPetrov/rn-self-posts/",
+        "description": "Личный блог с текстовыми постами на RN + SQLite.",
+        "date": "дек 2019",
+        "tags": "#react-native"
+    },
+    {
+        "id": 11,
+        "img": "./dist/img/playerjs_result.jpg",
+        "title": "Плеер аудиодорожек",
+        "link": "pages/jsplayer/",
+        "description": "Реализация приложения на ванильном JS.",
+        "date": "янв 2020",
+        "tags": "#html #css #javascript"
     }
+
 ]

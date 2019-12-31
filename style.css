@@ -50,10 +50,14 @@ body {
 }
 
 .card {
-    width: 100%;
+    width: 100%; 
     text-align: center;
     margin: 10px;
+}
 
+.cardAvatar {
+    width:120px; 
+    height: 120px;
 }
 
 .title {
@@ -127,6 +131,8 @@ body {
     height: 18px;
     line-height: 0.5;
 }
+
+
 
 .postText {
     align-items: center;
