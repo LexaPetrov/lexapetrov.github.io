@@ -83,7 +83,7 @@ let data = [
     },
      {
         "id": 9,
-        "img": "./dist/img/todo_result.jpg",
+        "img": "./dist/img/todo_result.JPG",
         "title": "TODO-list на React Native",
         "link": "https://github.com/LexaPetrov/rn-todo-app/",
         "description": "Список дел на RN + Firebase.",
@@ -92,7 +92,7 @@ let data = [
     },
      {
         "id": 10,
-        "img": "./dist/img/selfposts_result.jpg",
+        "img": "./dist/img/selfposts_result.JPG",
         "title": "Личный блог с постами на React Native",
         "link": "https://github.com/LexaPetrov/rn-self-posts/",
         "description": "Личный блог с текстовыми постами на RN + SQLite.",
@@ -101,7 +101,7 @@ let data = [
     },
     {
         "id": 11,
-        "img": "./dist/img/playerjs_result.jpg",
+        "img": "./dist/img/playerjs_result.JPG",
         "title": "Плеер аудиодорожек",
         "link": "pages/jsplayer/",
         "description": "Реализация приложения на ванильном JS.",
