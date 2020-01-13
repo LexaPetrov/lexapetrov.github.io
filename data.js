@@ -110,10 +110,10 @@ let data = [
     },
     {
         "id": 12,
-        "img": "./dist/img/hrium.jpg",
+        "img": "./dist/img/hrium.JPG",
         "title": "Figma-макет от HRium / Люмос22",
         "link": "pages/hrium/",
-        "description": "Вёрстка макета.",
+        "description": "Вёрстка макета из тестового задания.",
         "date": "13 янв 2020",
         "tags": "#html #css figma"
     }
