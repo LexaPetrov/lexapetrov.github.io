@@ -107,6 +107,15 @@ let data = [
         "description": "Реализация приложения на ванильном JS.",
         "date": "янв 2020",
         "tags": "#html #css #javascript"
+    },
+    {
+        "id": 12,
+        "img": "./dist/img/hrium.jpg",
+        "title": "Figma-макет от HRium / Люмос22",
+        "link": "pages/hrium/",
+        "description": "Вёрстка макета.",
+        "date": "13 янв 2020",
+        "tags": "#html #css figma"
     }
 
 ]
