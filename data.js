@@ -81,7 +81,7 @@ let data = [
         "date": "ноя 2019",
         "tags": "#photoshop #react"
     },
-     {
+    {
         "id": 9,
         "img": "./dist/img/todo_result.JPG",
         "title": "TODO-list на React Native",
@@ -90,7 +90,7 @@ let data = [
         "date": "дек 2019",
         "tags": "#react-native"
     },
-     {
+    {
         "id": 10,
         "img": "./dist/img/selfposts_result.JPG",
         "title": "Личный блог с постами на React Native",
@@ -113,9 +113,18 @@ let data = [
         "img": "./dist/img/hrium.JPG",
         "title": "Figma-макет от HRium / Люмос22",
         "link": "pages/hrium/",
-        "description": "Вёрстка макета из тестового задания.",
+        "description": "Сверстал макет из тестового задания. Из сложностей была реализация обратного отсчёта, в целом макет не сильно сложный",
         "date": "13 янв 2020",
         "tags": "#html #css figma"
+    },
+    {
+        "id": 13,
+        "img": "./dist/img/webalternative.png",
+        "title": "Figma-макет от WEB ALTERNATIVE",
+        "link": "pages/webalternative/",
+        "description": "Мой самый офигенный макет, заверстал просто по максимуму его. В нём очень много интересных реализаций всяких фишек, заморочился, но сделал.",
+        "date": "16 янв 2020",
+        "tags": "#html #css #figma #js"
     }
 
 ]
