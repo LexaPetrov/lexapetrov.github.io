@@ -250,7 +250,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 90%;
     padding-left: 15px;
     position: relative;
   }
@@ -322,8 +322,8 @@ body {
 
   summary:after {
     /* content: url("./arrow.png"); */
-    content: "🡇";
-    /* content: "➕"; */
+    /* content: ⬇; */
+    content: "➕";
     color: #393939;
     float: right;
     margin: -2px 0px 0 5px;
@@ -334,8 +334,9 @@ body {
 
   details[open] > summary:after {
     /* content: url("./arrow.png"); */
-    content: "🡇";
-    transform: rotate(180deg);
+    /* content: "🡇"; */
+    content: '➖';
+    /* transform: rotate(180deg); */
   }
 
   summary {
