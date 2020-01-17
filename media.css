@@ -33,6 +33,28 @@
     .postTitle  a{
         color: #5fa9ee;
     }
+
+    .pop__up__window {
+        background: #262626;
+        color: #fafafa;
+      }
+
+      .number,
+      .spoiler__item__title,
+      .spoiler__item__text {
+        color: #fefefe;
+      }
+
+      summary:after {
+        color: #fefefe;
+      }
+      .spoiler__item__wrapper {
+        background: #292929;
+      }
+
+      .spoiler__title {
+        color: #fefefe;
+      }
 }
 
 @media screen and (max-width: 320px) {

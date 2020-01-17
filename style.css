@@ -227,3 +227,132 @@ body {
     max-width: 100%;
     filter: grayscale(30%);
 }
+
+
+.spoiler__wrapper {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spoiler__title {
+    color: #393939;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "HelveticaRegular";
+  }
+  .spoiler__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding-left: 15px;
+    position: relative;
+  }
+
+  .spoiler__items:after {
+    content: "";
+    /* bottom: 5%; */
+    left: 0;
+    height: 100%;
+    border-left: 5px dashed #929292;
+    position: absolute;
+  }
+
+  .spoiler__item__wrapper {
+    display: flex;
+    background: #fafafa;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 5px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .number {
+    color: #393939;
+    font-size: 32px;
+    /* font-size: 26px; */
+    font-family: "HelveticaRegular";
+    margin-right: 10px;
+    font-weight: bold;
+    float: left;
+    height: 100%;
+    /* /* margin-bottom: 10px; */
+    margin-top: -10px;
+  }
+
+  .spoiler__item__title {
+    color: #393939;
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px;
+    /* padding-top: 25%; */
+    font-family: "HelveticaRegular";
+  }
+
+  .spoiler__item__text {
+    font-size: 14px;
+    color: #393939;
+    padding-top: 10px;
+    font-family: "HelveticaRegular";
+  }
+  .spoiler__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* vertical-align: middle; */
+  }
+
+  /* details {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+  } */
+
+  summary:after {
+    /* content: url("./arrow.png"); */
+    content: "🡇";
+    /* content: "➕"; */
+    color: #393939;
+    float: right;
+    margin: -2px 0px 0 5px;
+    padding: 1px 0 3px 0;
+    text-align: center;
+    /* height: 2px; width: 2px; */
+  }
+
+  details[open] > summary:after {
+    /* content: url("./arrow.png"); */
+    content: "🡇";
+    transform: rotate(180deg);
+  }
+
+  summary {
+    text-align: left;
+  }
+
+  details[open] .number {
+    color: #ef8b54;
+  }
+
+  summary:hover {
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:focus {
+    outline: none;
+  }

@@ -45,7 +45,23 @@ let posts = [
             <a href="https://sparkar.facebook.com/ar-studio/learn/documentation/design/effect-icons/">ИНСТРУКЦИЯ</a>
             <a href="https://origincache.facebook.com/developers/resources/?id=Instagram-Template.zip">
              ШАБЛОН ДЛЯ ФОТОШОПА</a></p>
-     <p><img src="dist/img/blogimg.jpg" class="blogImg"/>
+             <div id="spoiler" class="spoiler__wrapper">
+      <div class="spoiler__items">
+        <div class="spoiler__item__wrapper">
+          <details class="spoiler__item ">
+            <summary class="spoiler__item__title"
+              ><span class="number"></span>Памятка от Facebook</summary
+            >
+            <p class="spoiler__item__text">
+            <img src="dist/img/blogimg.jpg" class="blogImg"/>
+            </p>
+          </details>
+          <div style="margin-top: 2px; width: 100%;">
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
     <p>&nbsp;
       <p>7) Название эффекта содержит теги / URL. Что делать? Все просто, уберите их из названия.
     Теги это слова с символом '#', url это различные ссылки</p>
@@ -87,24 +103,52 @@ let posts = [
         <p>&nbsp;</p>
         <p>Также, используя обращения к input'ам блока makeup из туториала по макияжу, я думаю, тоже можно менять значения. Например тут 
          изменять размеры глаз, теней, прозрачности губ и так далее. (ещё не пробовал, кто делал и получилось - молодец)</p>
-         <p>&nbsp;</p>
-         <img src="./dist/img/blogimg3.png" class="blogImg" alt="">
-        <p>&nbsp;</p>
-		<p>Код для подключения слайдера:</p>
-		<div style="max-width: 100%; font-size: 12px; text-wrap: " >
-		<p>const nativeUI = require("NativeUI");
-        <p>const materials = require("Materials");
-        <p>let val = 0.5;
-        <p>let mat = materials.get('material0');
-        <p>const slider = nativeUI.slider;
-        <p>slider.value.monitor({fireOnInitialValue:false})
-        <p>.subscribe((mod) => {
-        <p>val = mod.newValue;
-        <p>mat.opacity = val;
-        <p>});
-        <p>slider.value = 0.5;
-        <p>slider.visible = true;
+         <!--  <p>&nbsp;</p> -->
+         <!-- <img src="./dist/img/blogimg3.png" class="blogImg" alt=""> -->
+         <!--   <p>&nbsp;</p> -->
+        <div id="spoiler" class="spoiler__wrapper">
+        <div class="spoiler__items">
+        <div class="spoiler__item__wrapper">
+          <details class="spoiler__item ">
+            <summary class="spoiler__item__title"
+              ><span class="number"></span>Показать вложение</summary
+            >
+            <p class="spoiler__item__text">
+            <img src="./dist/img/blogimg3.png" class="blogImg" alt="">
+            </p>
+          </details>
+          <div style="margin-top: 2px; width: 100%;">
+            <hr />
+          </div>
         </div>
+
+          <div class="spoiler__item__wrapper">
+            <details class="spoiler__item ">
+              <summary class="spoiler__item__title"
+                ><span class="number"></span> Код для подключения слайдера</summary
+              >
+              <p class="spoiler__item__text">
+              const nativeUI = require("NativeUI"); <br>
+              const materials = require("Materials"); <br>
+              let val = 0.5;              <br>
+              let mat = materials.get('material0');     <br>          
+              const slider = nativeUI.slider;        <br>      
+              slider.value.monitor({fireOnInitialValue:false})     <br>         
+              .subscribe((mod) => {    <br>          
+              val = mod.newValue;      <br>        
+              mat.opacity = val;        <br>      
+              });              <br>
+              slider.value = 0.5;       <br>       
+              slider.visible = true;<br>
+              </p>
+            </details>
+            <div style="margin-top: 2px; width: 100%;">
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
          <p>Пока как-то так.</p>
          <p>Спасибо за внимание! Для материальной поддержки (буду очень рад)- 
      <a href="https://rocketbank.ru/aleksey-petrov-sparkling-hill">ТЫК</a>
