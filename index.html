@@ -22,7 +22,7 @@
         /* background-image: url("./dist/img/bg1.png"); */
         background-position: center;
         font-size: 22px;
-        color: #fafafa;
+        color: #ccc;
         /* font-weight:; */
         margin: 0 auto;
       }
@@ -58,6 +58,11 @@
       }
       p {
         opacity: 0.8;
+        margin: 0;
+      }
+      #yt {
+          font-size: 12px;
+          color: #ccc;
       }
     </style>
 
@@ -84,10 +89,12 @@
         <a href="mailto:al1111997@yandex.ru">e-mail 📨</a>
         <a href="./portfolio.html">портфолио 👨🏻‍💻</a>
         <a href="https://github.com/lexapetrov/">github: lexapetrov 🧐</a>
-        <div id="yt">
+        <div>
           <a href="https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ"
             >youtube: ne.creator 📹</a
           >
+          <div id='yt'>
+          </div>
         </div>
         <a href="https://t.me/killng4fun">telegram: killing4fun 📱</a>
 
@@ -100,18 +107,16 @@
 
     <script>
       fetch(
-        "https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ?view_as=subscriber",
-        {mode: 'no-cors'},
-      ).then((res) => {
-          console.log(res);
-          
-        let subs =
-          res[1].response.header.c4TabbedHeaderRenderer.subscriberCountText;
-
-        document.getElementById("yt").innerHTML = subs;
-
-        console.log(subs);
-      });
+        "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UC4-phUrGgm63fZ9qZ1GOxBQ&key=AIzaSyBj811HF4_j0-j_Q-NSvu0zA90Gipz4aNg"
+      )
+        .then((res) => {
+          return res.json();
+        })
+        .then((res) => {
+          let subs = res.items[0].statistics.subscriberCount;
+          let views = res.items[0].statistics.viewCount;
+          document.getElementById("yt").innerHTML = `подписчиков: ${subs} \n просмотров: ${views}`;
+        });
     </script>
   </body>
 </html>
