@@ -11,8 +11,6 @@
         text-decoration: none;
       }
 
-
-
       body {
         font-family: Arial, Helvetica, sans-serif;
         background-color: #393939;
@@ -62,6 +60,13 @@
           opacity: .8;
       }
     </style>
+    <script>
+        fetch('https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ?view_as=subscriber').then((res) => {
+            let subs = res[1].response.header.c4TabbedHeaderRenderer.subscriberCountText
+
+            document.getElementById('yt').innerHTML = subs
+        })
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -82,15 +87,21 @@
         <p>// социальные сети</p>
         <a href="mailto:al1111997@yandex.ru">e-mail 📨</a>
         <a href="./portfolio.html">портфолио 👨🏻‍💻</a>
-        <a href="https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ"
+        <a href="https://github.com/lexapetrov/">github: lexapetrov 🧐</a>
+        <div id='yt'>
+            <a href="https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ"
           >youtube: ne.creator 📹</a
         >
+        </div>
+        <a href="https://t.me/killng4fun">telegram: killing4fun 📱</a>
+
         <a href="https://www.instagram.com/ne.creator/"
-          >instagram: @ne.creator 📷</a
+          >instagram: ne.creator 📷</a
         >
-        <a href="https://t.me/killng4fun">telegram: @killing4fun 📱</a>
       </div>
       <span class="s2">}</span>
     </div>
   </body>
 </html>
+
+
