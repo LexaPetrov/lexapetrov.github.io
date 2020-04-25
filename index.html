@@ -47,31 +47,27 @@
         padding: 10px;
       }
       span {
-          width: 100%;
-          color: orange;
+        width: 100%;
+        color: orange;
       }
       .s1 {
-          text-align: right;
+        text-align: right;
       }
-      .s2{
-          text-align-last: left;
-      } 
-      p{
-          opacity: .8;
+      .s2 {
+        text-align-last: left;
+      }
+      p {
+        opacity: 0.8;
       }
     </style>
-    <script>
-        fetch('https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ?view_as=subscriber').then((res) => {
-            let subs = res[1].response.header.c4TabbedHeaderRenderer.subscriberCountText
 
-            document.getElementById('yt').innerHTML = subs
-        })
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="vizit_card">
-        <span class="s1">function getMyLinks()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span>
+      <span class="s1"
+        >function getMyLinks()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span
+      >
       <div class="vizit_card_donats">
         <p>// поддержать копеечкой</p>
 
@@ -88,10 +84,10 @@
         <a href="mailto:al1111997@yandex.ru">e-mail 📨</a>
         <a href="./portfolio.html">портфолио 👨🏻‍💻</a>
         <a href="https://github.com/lexapetrov/">github: lexapetrov 🧐</a>
-        <div id='yt'>
-            <a href="https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ"
-          >youtube: ne.creator 📹</a
-        >
+        <div id="yt">
+          <a href="https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ"
+            >youtube: ne.creator 📹</a
+          >
         </div>
         <a href="https://t.me/killng4fun">telegram: killing4fun 📱</a>
 
@@ -101,7 +97,21 @@
       </div>
       <span class="s2">}</span>
     </div>
+
+    <script>
+      fetch(
+        "https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ?view_as=subscriber",
+        {mode: 'no-cors'},
+      ).then((res) => {
+          console.log(res);
+          
+        let subs =
+          res[1].response.header.c4TabbedHeaderRenderer.subscriberCountText;
+
+        document.getElementById("yt").innerHTML = subs;
+
+        console.log(subs);
+      });
+    </script>
   </body>
 </html>
-
-
