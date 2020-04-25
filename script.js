@@ -69,3 +69,44 @@ function toPost() {
     document.getElementById(window.location.hash.split('@')[1]).scrollIntoView({behavior: "smooth"});
 }
 
+
+// fetch('https://myapp-2b4e5.firebaseio.com/myapp/-Lzm_AhKH613wj8gfVCl', {
+// 	method: 'GET',
+// 	headers: {
+// 		'Content-Type':'application/json',
+// 		'Access-Control-Allow-Origin': '*',
+// 		"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+// 	}
+// })
+// .then(response => response.json())
+// .then(response => {
+// 	console.log(response)
+// })
+
+// fetch('https://myapp-2b4e5.firebaseio.com/myapp.json', {
+// 	method: 'POST',
+// 	headers: {
+// 		'Content-Type':'application/json'
+// 	},
+// 	body: JSON.stringify({
+// 		saas: 'asa'
+// 	})
+// })
+// .then(response => response.json())
+// .then(response => {
+// 	console.log(response)
+// })
+
+fetch('http://localhost:4000/qwertyj', {
+	method: 'post',
+	
+	body: JSON.stringify({
+		publiclink: 'sssr', name: 'asas', pass:'saas'
+	}),
+	headers: {
+		'Content-Type': 'application/json'
+	}
+}).then(response => response.json()).then(response => {
+	console.log(response)
+	return response
+}).catch(err => console.log(err))

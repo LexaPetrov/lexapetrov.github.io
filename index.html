@@ -1,67 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Алексей Петров | блог и портфолио</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./script.js"></script>
-    <script type="text/javascript" src="data.js"></script>
-    <script type="text/javascript" src="posts.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>| Алексей Петров |</title>
+    <style>
+      a,
+      a:visited {
+        color: #5fa9ee;
+        margin: 10px 0;
+        text-decoration: none;
+      }
 
-</head>
-<body id="body">
-<div class="content" id="content">
-    <div class="card">
-        <img src="dist/img/avatarEmoji.jpg" alt="Alexey Petrov" style="width:120px; height: 120px;">
-        <h1>Привет! Я — Алексей.</h1>
-        <p class="title">frontend-разработчик</p>
-        <p>📍 Россия, Оренбург</p>
-        <div class="links">
-            <a href="https://www.instagram.com/killing4fun/"><img src="dist/img/instagram.png" alt=""></a>
-            <a href="https://www.vk.com/killing4fun/"><img src="dist/img/vk.png" alt=""></a>
-            <a href="https://www.twitter.com/petrovlexax/"><img src="dist/img/twitter.png" alt=""></a>
-            <a href="https://www.telegram.org/killing4fun/"><img src="dist/img/telegram.png" alt=""></a>
-            <a href="https://www.facebook.com/killing4fun/"><img src="dist/img/facebook.png" alt=""></a>
-            <a href="https://www.github.com/lexapetrov/"><img src="dist/img/github.png" alt=""></a>
-        </div>
-        <p class="sendMail"><a href="mailto:al1111997@yandex.ru">написать на почту 📨</a></p>
-        <a href="#" onclick="expandContent()" id="expand">сделать контент справа ➡️</a>
-        <div class="changeTheme">
-            <span>👨‍🔧</span>
-            <input class="apple-switch" onclick="Blog()" type="checkbox">
-            <span>👨‍💻</span>
-        </div>
 
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #393939;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-image: url("./dist/img/bg1.png");
+        background-position: center;
+        font-size: 24px;
+        color: #fafafa;
+        /* font-weight:; */
+      }
+
+      .vizit_card {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .vizit_card_donats,
+      .socials {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px dashed #ccc; */
+        border-radius: 5px;
+        padding: 10px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="vizit_card">
+      <div class="vizit_card_donats">
+        <p>// поддержать копеечкой</p>
+
+        <a href="https://www.tinkoff.ru/rm/petrov.aleksey68/IXJ5N7740/"
+          >[ tinkoff ]</a
+        >
+        <a href="https://money.yandex.ru/to/41001921826050">[ yandex money ]</a>
+        <a href="https://www.donationalerts.com/r/ne_creator"
+          >[ donation alerts ]</a
+        >
+      </div>
+      <div class="socials">
+        <p>// социальные сети</p>
+        <a href="mailto:al1111997@yandex.ru">[ e-mail ]</a>
+        <a href="./portfolio.html">[ портфолио ]</a>
+        <a href="https://www.youtube.com/channel/UC4-phUrGgm63fZ9qZ1GOxBQ"
+          >[ youtube: ne.creator ]</a
+        >
+        <a href="https://www.instagram.com/ne.creator/"
+          >[ instagram: @ne.creator ]</a
+        >
+        <a href="https://t.me/killng4fun">[ telegram: @killing4fun ]</a>
+      </div>
     </div>
-    <div class="postsContent" id="postsContent"><!-- сайты :) --></div>
-    <div class="blogContent" id="blogContent"><!-- посты :) --></div>
-</div>
-<div style='text-align: center;'>
-    <!-- Yandex.Metrika informer -->
-<a href="https://metrika.yandex.ru/stat/?id=56125249&amp;from=informer"
-target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/56125249/3_0_292929FF_292929FF_1_uniques"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
-<!-- /Yandex.Metrika informer -->
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(56125249, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/56125249" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-</div>
-</body>
+  </body>
 </html>
-
-
-
