@@ -1,19 +1,15 @@
 export const getAge = () => {
+    let bday = new Date(1997, 1, 24);
+
     let now = new Date();
-    let birthday = new Date(1997, 1, 24);
-    let diff = now.getFullYear() - birthday.getFullYear();
-    if (now.getMonth() < 1) {
-        if (now.getDay() < 23) {
-            (diff -= 1)
-        }
-    }
+    let diff = now - bday;
 
-    // let date1 = new Date()
-    // let date2 = new Date(`2-24-${now.getFullYear()}`);
+    let milliseconds = diff;
+    let seconds = milliseconds / 1000;
+    let minutes = seconds / 60;
+    let hours = minutes / 60;
+    let days = hours / 24;
+    let years = days / 365.25
 
-    // let daysLag = Math.ceil(
-    //     Math.abs(date2.getTime() - date1.getTime()) * 1000 // микросекунды / (1000 * 3600 * 24)
-    // )
-
-    return `${diff}`
+    return `${years}`
 }

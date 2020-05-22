@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("./fonts/HelveticaRegular.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "HelveticaRegular";
+}
+
+
+body,
+header {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+body {
+  background: url('./img/pattern.png');
+  background-size: 300px 300px;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 100%;
+  background: #242424;
+  padding: 10px;
+}
+
+a:hover{
+  backdrop-filter: brightness(.8);
+}
+
+a,
+a:visited {
+  color: #fafafa;
+  text-decoration: none;
+  padding: 5px;
+}
+
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.main__content{
+  
+}
+
+.header__links {
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header__links a {
+  margin-right: 20px;
+  font-size: 16px;
+}
+.about__link:before {
+  background-image: url('./img/about__icon.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+.portfolio__link:before {
+  background-image: url('./img/portfolio__icon.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+.blog__link:before {
+  background-image: url('./img/blog__icon.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+.age {
+  
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fafafa;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #242424;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  font-size: 14px;
+}
+
+.footer__label1:after {
+  background-image: url('./img/heart__icon.png');
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px; 
+  height: 16px;
+  content:"";
+  margin-right: 5px;
+  margin-left: 5px;
 }

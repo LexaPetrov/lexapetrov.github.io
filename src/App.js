@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom'
 
-import { getAge } from './functions'
+import Main from './components/Main'
+import Portfolio from './components/Portfolio'
+import Blog from './components/Blog'
+import Layout from './components/Layout'
 
 function App() {
-  const [age, setAge] = useState('')
-  useEffect(() => setAge(getAge()), [age])
-    
 
   return (
-    <div className="App">
-      {age}
-    </div>
+    <Layout>
+      <Switch>
+        <Route path={process.env.PUBLIC_URL + '/'} exact component={Main} />
+        <Route path={process.env.PUBLIC_URL + '/portfolio'} component={Portfolio} />
+        <Route path={process.env.PUBLIC_URL + '/blog'} component={Blog} />
+      </Switch>
+    </Layout>
   )
 }
 
