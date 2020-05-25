@@ -18,6 +18,7 @@ export default props => {
         <div className='about__card__description'>
           <p className='about__card__description__name'>Hi! I'm Alexey!</p>
           <p className=''>frontend-developer</p>
+          <hr/>
           <div className='about__card__description__skills'>
             Location: Russia, Orenburg
           </div>
@@ -44,6 +45,9 @@ export default props => {
         </a>
         <a className='about__socials__link' href='2' alt=''>
           <img src='img/socials__youtube.png' alt=''></img>
+        </a>
+        <a className='about__socials__link' href='2' alt=''>
+          <img src='img/socials__mail.png' alt=''></img>
         </a>
       </div>
     </>
