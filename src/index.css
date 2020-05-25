@@ -49,7 +49,10 @@ a:visited {
 }
 
 .main__content{
-  
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__links {
@@ -64,6 +67,7 @@ a:visited {
 .header__links a {
   margin-right: 20px;
   font-size: 16px;
+  border-radius: 5px;
 }
 .about__link:before {
   background-image: url('./img/about__icon.png');
@@ -96,22 +100,93 @@ a:visited {
 }
 
 .age {
-  
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  /* position: fixed; */
+  /* justify-content: center; */
 }
+.age label {
+}
+
+.header__active {
+  background: rgba(255, 255, 255, .2);
+}
+
+.about__card, .about__socials {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 3px #ccc;
+  margin-bottom: 50px;
+}
+
+.about__socials {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about__socials__link {
+  color: #000;
+  border-radius: 50%;
+  width: 48px;
+}
+
+.about__card__description {
+  width: 100%;
+}
+
+.about__card__img {
+  background-image: url('./img/avatar.JPG');
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  width: 100%; 
+  height: 350px;
+  background-repeat: no-repeat;
+  content:"";
+}
+
+.about__card__description__name {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.about__card__description__skills {
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color: #fafafa;
+  /* color: #fafafa; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: #242424;
-  position: absolute;
+  /* background: #242424; */
+  /* position: absolute; */
   bottom: 0;
   height: 40px;
   font-size: 14px;
+  /* margin-top: 500px; */
 }
 
 .footer__label1:after {

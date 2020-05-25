@@ -6,6 +6,8 @@ import Portfolio from './components/Portfolio'
 import Blog from './components/Blog'
 import Layout from './components/Layout'
 
+import './media.css'
+
 function App() {
 
   return (

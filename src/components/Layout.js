@@ -2,14 +2,18 @@ import React from 'react';
 import '../index.css'
 
 export default props => {
+    let link = window.location.pathname
+
+    console.log(link);
+    
 
     return (
         <>
             <header>
                 <div className='header__links container' >
-                    <a className='about__link' href='/'>about me</a>
-                    <a className='portfolio__link' href='/portfolio'>portfolio</a>
-                    <a className='blog__link' href='/blog'>blog</a>
+                    <a className={`about__link ${link === '/' ? 'header__active' : null}`} href='/'>about me</a>
+                    <a className={`portfolio__link ${link === '/portfolio' ? 'header__active' : null}` } href='/portfolio'>portfolio</a>
+                    <a className={`blog__link ${link === '/blog' ? 'header__active' : null}`} href='/blog'>blog</a>
                 </div>
             </header>
             <div className='container main__content'>
