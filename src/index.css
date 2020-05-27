@@ -99,6 +99,47 @@ a:visited {
   margin-right: 5px;
 }
 
+.about__card__description__skills.location:before {
+  background-image: url('./img/icon__location.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+.about__card__description__skills.age:before {
+  background-image: url('./img/icon__diagram.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+.about__card__description__skills.bio:before {
+  background-image: url('./img/icon__paper.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+.about__card__description__skills.bio2:before {
+  background-image: url('./img/icon__pencil.png');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  margin-right: 5px;
+}
+
+
 .age {
   width: 100%;
   display: flex;
