@@ -129,12 +129,21 @@ a:visited {
 .about__socials {
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  /* Or do it all in one line
+    with flex flow */
+  flex-flow: row wrap;
 }
 
 .about__socials__link {
   color: #000;
   border-radius: 50%;
   width: 48px;
+}
+
+.about__socials__link img {
+  width: 48px;
+  height: 48px;
 }
 
 .about__card__description {
