@@ -139,6 +139,7 @@ a:visited {
   color: #000;
   border-radius: 50%;
   width: 48px;
+  animation: spinning .5s;
 }
 
 .about__socials__link img {
@@ -172,9 +173,43 @@ a:visited {
   margin-top: 20px;
 }
 
+.portfolio__wrapper {
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
 
 
 
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.portfolio__item {
+  padding: 5px;
+  /* border-radius: 5px; */
+  box-shadow: 0px 0px 1px 1px #ccc;
+  width: 250px;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 20px;
+  background: #fff;
+  color: #000;
+  animation: spinning .5s;
+}
+
+.portfolio__item a{
+ color: #000;
+}
 
 
 
