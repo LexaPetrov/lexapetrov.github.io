@@ -1,8 +1,0 @@
-@media screen and (max-width: 767px) {
-    .about__card
-    /* .about__socials  */
-    {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
