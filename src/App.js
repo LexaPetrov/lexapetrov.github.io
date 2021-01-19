@@ -11,7 +11,7 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path={process.env.PUBLIC_URL + '/'} exact component={Main} />
+        <Route path={process.env.PUBLIC_URL + '/' } exact component={Main} />
         <Route path={process.env.PUBLIC_URL + '/portfolio'} component={Portfolio} />
         <Route path={process.env.PUBLIC_URL + '/blog'} component={Blog} />
       </Switch>
