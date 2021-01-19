@@ -5,6 +5,38 @@ export const data = {
                 videoId: "ybXwUWd3u5s"
             },
             snippet: {
+                title: "Модальное окно на Реакте за 10 минут / React Modal Component",
+                thumbnails: {
+                        high: {
+                        url: "https://i.ytimg.com/vi/uortqNKZHp0/hqdefault.jpg",
+                        width: 480,
+                        height: 360
+                    }
+                },
+                publishTime: "2021-01-16T07:00:00Z"
+            }
+        }, 
+        {
+            id: {
+                videoId: "ybXwUWd3u5s"
+            },
+            snippet: {
+                title: "Одновременный парсинг нескольких сайтов/категорий несколькими браузерами [nodejs cluster puppeteer]",
+                thumbnails: {
+                        high: {
+                        url: "https://i.ytimg.com/vi/Ob-iHqLZGkw/hqdefault.jpg",
+                        width: 480,
+                        height: 360
+                    }
+                },
+                publishTime: "2020-11-03T07:00:00Z"
+            }
+        }, 
+        {
+            id: {
+                videoId: "ybXwUWd3u5s"
+            },
+            snippet: {
                 title: "Как сделать тёмную тему на сайт? Делаем за 10 минут! [React, javascript, css @media, localstorage]",
                 thumbnails: {
                         high: {

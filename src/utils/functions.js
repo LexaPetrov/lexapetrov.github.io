@@ -18,6 +18,15 @@ let git = 'https://lexapetrov.github.io'
 
 export const data = [
     {
+        "id": 20,
+        "img": "img/item__21.png",
+        "name": "Интернет-приёмная",
+        "link": "https://letters.orb.ru",
+        "desc": `Интернет-приёмная правительства Оренбургской области`,
+        "tags": "ReactJS",
+        "class": 'react js'
+    },
+    {
         "id": 19,
         "img": "img/item__20.png",
         "name": "mysocials.ru",
