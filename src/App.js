@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 import Main from './components/Main'
 import Portfolio from './components/Portfolio'
@@ -11,9 +11,12 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path={process.env.PUBLIC_URL + '/' } exact component={Main} />
-        <Route path={process.env.PUBLIC_URL + '/portfolio'} component={Portfolio} />
-        <Route path={process.env.PUBLIC_URL + '/blog'} component={Blog} />
+        <Route path={process.env.PUBLIC_URL + '/'} exact component={Main} />
+        <Route path={process.env.PUBLIC_URL + '/portfolio'} exact component={Portfolio} />
+        <Route path={process.env.PUBLIC_URL + '/blog'} exact component={Blog} />
+        <Route path='*'>
+          <Redirect to='/' />
+        </Route>
       </Switch>
     </Layout>
   )
