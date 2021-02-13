@@ -23,8 +23,8 @@ export const data = [
         "name": "Интернет-приёмная",
         "link": "https://letters.orb.ru",
         "desc": `Интернет-приёмная правительства Оренбургской области`,
-        "tags": "ReactJS",
-        "class": 'react js'
+        "tags": "ReactJS Vue3",
+        "class": 'react vue js '
     },
     {
         "id": 19,
