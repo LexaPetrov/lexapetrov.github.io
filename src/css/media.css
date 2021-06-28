@@ -89,6 +89,7 @@
   .checkbox-all:checked + label,
   .checkbox-html:checked + label,
   .checkbox-react:checked + label,
+  .checkbox-vue:checked + label,
   .checkbox-python:checked + label {
     /* background: rgba(255, 255, 255, 0.2); */
     background: var(--color_dark_2);

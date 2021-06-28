@@ -14,6 +14,8 @@ export default props => {
             <label htmlFor='html'>html</label>
             <input id='react' className='checkbox-react' type='radio' name='checkbox'/>
             <label htmlFor='react'>react</label>
+            <input id='vue' className='checkbox-vue' type='radio' name='checkbox'/>
+            <label htmlFor='vue'>vue</label>
         </>
     )
 }

@@ -8,6 +8,8 @@ export default props => {
     'ReactJS ⭐️',
     'Redux ⭐️',
     'React Native ⭐️',
+    'Vue3 ⭐️',
+    'vuex ⭐️',
     'HTML',
     'CSS',
     'Python',
